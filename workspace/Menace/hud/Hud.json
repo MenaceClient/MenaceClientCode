@@ -1,0 +1,45 @@
+{
+  "ArmourElement": {
+    "X": 574.0,
+    "Y": 521.0,
+    "Options": {}
+  },
+  "GameStatsElement": {
+    "X": 0.0,
+    "Y": 14.0,
+    "Options": {
+      "Custom Font": true,
+      "Color": -65536
+    }
+  },
+  "PingElement": {
+    "X": 0.0,
+    "Y": 517.0,
+    "Options": {
+      "Custom Font": true,
+      "Color": -65536
+    }
+  },
+  "PositionElement": {
+    "X": 0.0,
+    "Y": 530.0,
+    "Options": {
+      "Custom Font": true,
+      "Color": -65536,
+      "Mode": "Single"
+    }
+  },
+  "WatermarkElement": {
+    "X": 0.0,
+    "Y": 0.0,
+    "Options": {
+      "Custom Font": true,
+      "Color": -65536
+    }
+  },
+  "HUDSettingsElement": {
+    "X": 50.0,
+    "Y": 50.0,
+    "Options": {}
+  }
+}

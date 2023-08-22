@@ -1,0 +1,94 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 22/08/23 7:27 PM
+Description: Unexpected error
+
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at dev.menace.ui.hud.elements.ArrayElement.render(ArrayElement.java:100)
+	at dev.menace.ui.hud.HUDManager.lambda$new$0(HUDManager.java:67)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:142)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1261)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:939)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:273)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:9)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at dev.menace.ui.hud.elements.ArrayElement.render(ArrayElement.java:100)
+	at dev.menace.ui.hud.HUDManager.lambda$new$0(HUDManager.java:67)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.gui.GuiIngame.renderGameOverlay(GuiIngame.java:142)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 5 total; [EntityPlayerSP['ExterminateYT'/1214563, l='MpServer', x=218.00, y=70.00, z=173.36], EntityOtherPlayerMP['XS0'/1211629, l='MpServer', x=256.94, y=61.91, z=169.84], EntityOtherPlayerMP['Toutouchien'/1212715, l='MpServer', x=199.03, y=70.50, z=129.38], EntityOtherPlayerMP['JustAnRandomOwl'/1214271, l='MpServer', x=215.72, y=62.00, z=141.34], EntityOtherPlayerMP['____Player____'/1214337, l='MpServer', x=243.41, y=62.37, z=177.29]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 211.00,60.00,162.00 - World: (211,60,162), Chunk: (at 3,3,2 in 13,10; contains blocks 208,0,160 to 223,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 160799 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 46 total; [EntityArmorStand['§6AntiCactus'/64, l='MpServer', x=215.50, y=65.66, z=156.50], EntityPlayerSP['ExterminateYT'/1214563, l='MpServer', x=218.00, y=70.00, z=173.36], EntityArmorStand['§6Scaffold'/65, l='MpServer', x=239.50, y=65.66, z=164.50], EntityOtherPlayerMP['ringo360xd'/1211945, l='MpServer', x=244.47, y=93.16, z=223.17], EntityArmorStand['§6Jesus'/66, l='MpServer', x=214.50, y=65.66, z=188.50], EntityArmorStand['§6AntiFire'/67, l='MpServer', x=215.50, y=65.66, z=168.50], EntityArmorStand['§6TerrainSpeed'/69, l='MpServer', x=250.50, y=65.66, z=160.50], EntityArmorStand['§6Phase'/70, l='MpServer', x=235.50, y=65.66, z=211.50], EntityArmorStand['§6Nofall/Fly/Glide'/72, l='MpServer', x=214.50, y=65.66, z=140.50], EntityArmorStand['§6Step'/73, l='MpServer', x=208.50, y=65.66, z=140.50], EntitySheep['Sheep'/1214171, l='MpServer', x=187.00, y=62.00, z=184.19], EntityArmorStand['§6Fastladder'/75, l='MpServer', x=208.50, y=65.66, z=180.50], EntityArmorStand['§6Esp'/76, l='MpServer', x=208.50, y=65.66, z=199.50], EntityArmorStand['§6KillauraAimTest 1'/77, l='MpServer', x=190.50, y=65.66, z=170.50], EntityArmorStand['§6KillauraAimTest 2'/78, l='MpServer', x=179.50, y=65.66, z=170.50], EntityVillager['Aim2'/1150239, l='MpServer', x=174.50, y=62.00, z=134.50], EntityArmorStand['§6KillauraSwitchTest'/79, l='MpServer', x=189.50, y=65.66, z=186.50], EntityVillager['Aim5'/959489, l='MpServer', x=191.50, y=65.00, z=134.50], EntityArmorStand['§6KillauraMultiTest1'/80, l='MpServer', x=179.50, y=65.66, z=186.50], EntityVillager['Aim4'/1024861, l='MpServer', x=185.50, y=62.00, z=134.50], EntityArmorStand['§6KillauraWallTest'/83, l='MpServer', x=181.50, y=65.66, z=139.50], EntityOtherPlayerMP['____Player____'/1214337, l='MpServer', x=243.41, y=62.37, z=177.29], EntityOtherPlayerMP['XS0'/1211629, l='MpServer', x=256.94, y=61.91, z=169.84], EntityArmorStand['§6Snow'/85, l='MpServer', x=207.50, y=65.66, z=156.50], EntityArmorStand['§6PVP'/86, l='MpServer', x=181.50, y=65.66, z=160.50], EntityArmorStand['§6ChestStealer'/87, l='MpServer', x=200.50, y=65.66, z=195.50], EntityArmorStand['§6BedFucker'/88, l='MpServer', x=185.50, y=65.66, z=195.50], EntitySheep['Sheep'/1214219, l='MpServer', x=192.72, y=62.00, z=186.34], EntityVillager['Aim3'/1188175, l='MpServer', x=179.50, y=62.00, z=134.50], EntityVillager['Aim7'/1007441, l='MpServer', x=174.50, y=73.00, z=134.50], EntityOtherPlayerMP['JustAnRandomOwl'/1214271, l='MpServer', x=215.72, y=62.00, z=141.34], EntityVillager['Aim8'/1205942, l='MpServer', x=179.50, y=73.50, z=134.50], EntityArmorStand['§6NoRotateSet'/4453, l='MpServer', x=203.50, y=65.47, z=169.41], EntitySheep['Sheep'/1214133, l='MpServer', x=192.00, y=62.00, z=187.63], EntityVillager['Aim10'/1212149, l='MpServer', x=189.50, y=75.00, z=134.50], EntitySheep['Sheep'/1213946, l='MpServer', x=187.53, y=62.00, z=189.78], EntitySheep['Sheep'/1214203, l='MpServer', x=186.16, y=62.00, z=188.00], EntityOtherPlayerMP['JustAnRandomOwl'/1214271, l='MpServer', x=215.72, y=62.00, z=141.34], EntitySheep['Sheep'/1214242, l='MpServer', x=188.31, y=62.00, z=187.38], EntityOtherPlayerMP['chinese154'/1214266, l='MpServer', x=169.65, y=62.00, z=176.58], EntityOtherPlayerMP['____Player____'/1214337, l='MpServer', x=243.41, y=62.37, z=177.29], EntityOtherPlayerMP['Toutouchien'/1212715, l='MpServer', x=199.03, y=70.50, z=129.38], EntitySheep['Sheep'/1214190, l='MpServer', x=187.13, y=62.00, z=186.88], EntityOtherPlayerMP['XS0'/1211629, l='MpServer', x=256.94, y=61.91, z=169.84], EntitySheep['Sheep'/1213997, l='MpServer', x=191.69, y=62.00, z=189.09], EntityOtherPlayerMP['Toutouchien'/1212715, l='MpServer', x=199.03, y=70.50, z=129.38]]
+	Retry entities: 0 total; []
+	Server brand: DionaSpigot (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:356)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2531)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:302)
+	at net.minecraft.client.main.Main.main(Main.java:113)
+	at Start.main(Start.java:9)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_382, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 710802448 bytes (677 MB) / 1025507328 bytes (978 MB) up to 1025507328 bytes (978 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: gamerswordpack.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M6_pre2
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 536.23
+	OpenGlRenderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8
