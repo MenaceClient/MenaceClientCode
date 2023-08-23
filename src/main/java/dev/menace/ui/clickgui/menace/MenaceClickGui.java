@@ -7,16 +7,14 @@ import dev.menace.ui.clickgui.menace.components.CategorySelectorComponent;
 import dev.menace.ui.clickgui.menace.components.ConfigMenuComponent;
 import dev.menace.ui.clickgui.menace.components.ModuleComponent;
 import dev.menace.ui.clickgui.menace.components.SettingsMenuComponent;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
-import dev.menace.utils.render.font.MenaceFontRenderer;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.input.Keyboard;
 
 import java.awt.*;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 

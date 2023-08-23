@@ -1,14 +1,12 @@
 package dev.menace.ui.clickgui.menace.components.settings;
 
 import dev.menace.module.settings.NumberSetting;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 import net.minecraft.util.MathHelper;
 import org.lwjgl.input.Mouse;
 
 import java.awt.*;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class SliderComponent extends SettingComponent {

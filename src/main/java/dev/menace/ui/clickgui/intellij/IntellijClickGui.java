@@ -3,7 +3,7 @@ package dev.menace.ui.clickgui.intellij;
 import dev.menace.Menace;
 import dev.menace.module.Category;
 import dev.menace.ui.clickgui.intellij.components.IntellijCategory;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;

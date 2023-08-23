@@ -13,22 +13,19 @@ import dev.menace.module.ModuleManager;
 import dev.menace.module.config.ConfigManager;
 import dev.menace.ui.hud.HUDManager;
 import dev.menace.utils.file.FileManager;
-import dev.menace.utils.misc.ChatUtils;
 import dev.menace.utils.misc.DiscordRP;
-import dev.menace.utils.security.MenaceUser;
-import dev.menace.utils.session.LoginManager;
 import dev.menace.utils.render.font.Fonts;
 import dev.menace.utils.render.font.MenaceFontRenderer;
+import dev.menace.utils.security.MenaceUser;
+import dev.menace.utils.session.LoginManager;
 import fr.litarvan.openauth.microsoft.MicrosoftAuthenticationException;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.Display;
-import org.pircbotx.exception.IrcException;
 
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Menace {
@@ -53,6 +50,9 @@ public class Menace {
     public MenaceFontRenderer ascii24;
     public MenaceFontRenderer ascii18;
     public MenaceFontRenderer jetbrainsMono;
+
+    //Misc
+    public boolean borderlessFullscreen = true;
 
     public void initFonts() {
         sfPro = new MenaceFontRenderer(Fonts.fontFromTTF(new ResourceLocation("menace/fonts/SF-Pro.ttf"), 20, Font.PLAIN), true);
@@ -122,6 +122,8 @@ public class Menace {
         discordRP.stop();
         hudManager.saveElements();
         commandManager.end();
+        moduleManager.saveKeys();
+        configManager.getLoadedConfig().save();
     }
 
     @EventLink

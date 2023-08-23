@@ -1,9 +1,10 @@
 package dev.menace.module;
 
 import com.google.gson.JsonObject;
-import dev.menace.module.modules.render.ClickGuiModule;
-import dev.menace.module.modules.render.HUDEditorModule;
-import dev.menace.module.modules.world.FastPlaceModule;
+import dev.menace.module.modules.combat.*;
+import dev.menace.module.modules.movement.*;
+import dev.menace.module.modules.render.*;
+import dev.menace.module.modules.world.*;
 import dev.menace.utils.file.FileManager;
 
 import java.io.File;
@@ -15,13 +16,17 @@ public class ModuleManager {
     protected static ArrayList<Module> modules = new ArrayList<>();
 
     //COMBAT
+    public KillauraModule killauraModule = new KillauraModule();
+    public VelocityModule velocityModule = new VelocityModule();
 
     //MOVEMENT
+    public SprintModule sprintModule = new SprintModule();
 
     //PLAYER
 
     //RENDER
     ClickGuiModule clickGuiModule = new ClickGuiModule();
+    ESPModule espModule = new ESPModule();
     HUDEditorModule hudEditorModule = new HUDEditorModule();
 
     //WORLD

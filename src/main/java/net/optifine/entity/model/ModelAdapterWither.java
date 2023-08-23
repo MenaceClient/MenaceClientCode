@@ -35,7 +35,7 @@ public class ModelAdapterWither extends ModelAdapter
 
             if (modelPart.startsWith(s))
             {
-                ModelRenderer[] amodelrenderer1 = (ModelRenderer[])((ModelRenderer[])Reflector.getFieldValue(modelwither, Reflector.ModelWither_bodyParts));
+                ModelRenderer[] amodelrenderer1 = modelwither.getBodyParts();
 
                 if (amodelrenderer1 == null)
                 {
@@ -55,7 +55,7 @@ public class ModelAdapterWither extends ModelAdapter
 
                 if (modelPart.startsWith(s1))
                 {
-                    ModelRenderer[] amodelrenderer = (ModelRenderer[])((ModelRenderer[])Reflector.getFieldValue(modelwither, Reflector.ModelWither_heads));
+                    ModelRenderer[] amodelrenderer = modelwither.getHeads();
 
                     if (amodelrenderer == null)
                     {

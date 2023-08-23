@@ -47,4 +47,15 @@ public class ModelSquid extends ModelBase
             this.squidTentacles[i].render(scale);
         }
     }
+
+    public ModelRenderer[] getTentacles()
+    {
+        return this.squidTentacles;
+    }
+
+    public ModelRenderer getBody()
+    {
+        return this.squidBody;
+    }
+
 }

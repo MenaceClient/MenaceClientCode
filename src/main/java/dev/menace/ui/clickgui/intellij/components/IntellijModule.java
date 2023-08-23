@@ -8,11 +8,10 @@ import dev.menace.module.settings.NumberSetting;
 import dev.menace.ui.clickgui.intellij.components.impl.BoolComponent;
 import dev.menace.ui.clickgui.intellij.components.impl.EnumComponent;
 import dev.menace.ui.clickgui.intellij.components.impl.SlideComponent;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 import dev.menace.utils.render.font.MenaceFontRenderer;
 import net.minecraft.util.ResourceLocation;
-import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
 import java.util.ArrayList;

@@ -9,6 +9,7 @@ public class HUDEditorModule extends Module {
 
     public HUDEditorModule() {
         super("HUDEditor", "Edit the HUD", Category.RENDER);
+        addSettings();
     }
 
     @Override

@@ -139,6 +139,11 @@ public class TileEntityBannerRenderer extends TileEntitySpecialRenderer<TileEnti
         }
     }
 
+    public void setBannerModel(ModelBanner bannerModelIn)
+    {
+        this.bannerModel = bannerModelIn;
+    }
+
     static class TimedBannerTexture
     {
         public long systemTime;

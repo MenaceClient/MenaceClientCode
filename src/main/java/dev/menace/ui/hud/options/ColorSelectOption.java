@@ -1,8 +1,7 @@
 package dev.menace.ui.hud.options;
 
 import dev.menace.utils.misc.ChatUtils;
-import dev.menace.utils.misc.MathUtils;
-import dev.menace.utils.render.RenderUtils;
+import dev.menace.utils.math.MathUtils;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;

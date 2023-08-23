@@ -69,4 +69,15 @@ public class ModelSilverfish extends ModelBase
         this.silverfishWings[2].rotateAngleY = this.silverfishBodyParts[1].rotateAngleY;
         this.silverfishWings[2].rotationPointX = this.silverfishBodyParts[1].rotationPointX;
     }
+
+    public ModelRenderer[] getSilverfishBodyParts()
+    {
+        return this.silverfishBodyParts;
+    }
+
+    public ModelRenderer[] getSilverfishWings()
+    {
+        return this.silverfishWings;
+    }
+
 }

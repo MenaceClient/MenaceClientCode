@@ -45,16 +45,10 @@ public class ModelAdapterWitherSkull extends ModelAdapter
         RenderManager rendermanager = Minecraft.getMinecraft().getRenderManager();
         RenderWitherSkull renderwitherskull = new RenderWitherSkull(rendermanager);
 
-        if (!Reflector.RenderWitherSkull_model.exists())
-        {
-            Config.warn("Field not found: RenderWitherSkull_model");
-            return null;
-        }
-        else
-        {
-            Reflector.setFieldValue(renderwitherskull, Reflector.RenderWitherSkull_model, modelBase);
-            renderwitherskull.shadowSize = shadowSize;
-            return renderwitherskull;
-        }
+
+        renderwitherskull.setHeadModel((ModelSkeletonHead) modelBase);
+        renderwitherskull.shadowSize = shadowSize;
+        return renderwitherskull;
+
     }
 }

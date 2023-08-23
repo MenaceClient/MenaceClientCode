@@ -20,6 +20,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import dev.menace.Menace;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SoundCategory;
 import net.minecraft.client.gui.GuiNewChat;
@@ -558,6 +560,12 @@ public class GameSettings
             this.entityShadows = !this.entityShadows;
         }
 
+        if (settingsOption == Options.BORDERLESS_FULLSCREEN) {
+            Menace.instance.borderlessFullscreen = !Menace.instance.borderlessFullscreen;
+            this.mc.toggleFullscreen();
+            this.mc.toggleFullscreen();
+        }
+
         this.saveOptions();
     }
 
@@ -1022,6 +1030,11 @@ public class GameSettings
                                     this.setModelPartEnabled(enumplayermodelparts, astring[1].equals("true"));
                                 }
                             }
+
+                            if (astring[0].equals("borderless_fullscreen"))
+                            {
+                                Menace.instance.borderlessFullscreen = astring[1].equals("true");
+                            }
                         }
                         catch (Exception exception)
                         {
@@ -1057,15 +1070,6 @@ public class GameSettings
 
     public void saveOptions()
     {
-        if (Reflector.FMLClientHandler.exists())
-        {
-            Object object = Reflector.call(Reflector.FMLClientHandler_instance, new Object[0]);
-
-            if (object != null && Reflector.callBoolean(object, Reflector.FMLClientHandler_isLoading, new Object[0]))
-            {
-                return;
-            }
-        }
 
         try
         {
@@ -1146,6 +1150,8 @@ public class GameSettings
             {
                 printwriter.println("modelPart_" + enumplayermodelparts.getPartName() + ":" + this.setModelParts.contains(enumplayermodelparts));
             }
+
+            printwriter.println("borderless_fullscreen:" + Menace.instance.borderlessFullscreen);
 
             printwriter.close();
         }
@@ -3188,7 +3194,10 @@ public class GameSettings
         CUSTOM_GUIS("of.options.CUSTOM_GUIS", false, false),
         RENDER_REGIONS("of.options.RENDER_REGIONS", false, false),
         SHOW_GL_ERRORS("of.options.SHOW_GL_ERRORS", false, false),
-        SMART_ANIMATIONS("of.options.SMART_ANIMATIONS", false, false);
+        SMART_ANIMATIONS("of.options.SMART_ANIMATIONS", false, false),
+
+        //Menace Borderless Fullscreen
+        BORDERLESS_FULLSCREEN("options.borderless_fullscreen", false, true);
 
         private final boolean enumFloat;
         private final boolean enumBoolean;

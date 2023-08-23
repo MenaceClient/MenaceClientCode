@@ -1,9 +1,15 @@
-package dev.menace.utils.misc;
+package dev.menace.utils.math;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Random;
 
 public class MathUtils {
+
+    private static final int MIN_DELAY_MS = 100; // Minimum delay between clicks in milliseconds
+    private static final int MAX_DELAY_MS = 300; // Maximum delay between clicks in milliseconds
+
+    private static final Random random = new Random();
 
     /**
      * Checks if mouse is over rectangle.
@@ -36,7 +42,7 @@ public class MathUtils {
     }
 
     public static int randInt(int i, int length) {
-        return (int) (Math.random() * (length - i)) + i;
+        return (random.nextInt() * (length - i)) + i;
     }
 
     public static double roundToPlace(double value, int places) {
@@ -55,4 +61,22 @@ public class MathUtils {
 
         return value;
     }
+
+    public static double getDistanceBetweenAngles(double angle1, double angle2) {
+        double angle = Math.abs(angle1 - angle2) % 360.0D;
+        if (angle > 180.0D) {
+            angle = 360.0D - angle;
+        }
+
+        return angle;
+    }
+
+    public static int calculateDelay(int aps) {
+        double baseDelay = 1000.0 / aps;
+        double randomFactor = random.nextDouble(); // Random value between 0 and 1
+        double delayWithVariation = baseDelay + (baseDelay * randomFactor);
+
+        return (int) Math.min(Math.max(delayWithVariation, MIN_DELAY_MS), MAX_DELAY_MS);
+    }
+
 }

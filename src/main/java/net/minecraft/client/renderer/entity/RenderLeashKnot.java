@@ -34,4 +34,10 @@ public class RenderLeashKnot extends Render<EntityLeashKnot>
     {
         return leashKnotTextures;
     }
+
+    public void setLeashKnotModel(ModelLeashKnot leashKnotModel)
+    {
+        this.leashKnotModel = leashKnotModel;
+    }
+
 }

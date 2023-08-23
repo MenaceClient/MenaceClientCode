@@ -455,4 +455,14 @@ public class TileEntityFurnace extends TileEntityLockable implements ITickable, 
             this.furnaceItemStacks[i] = null;
         }
     }
+
+    public String getCustomName()
+    {
+        return this.furnaceCustomName;
+    }
+
+    public void setCustomName(String customName)
+    {
+        this.furnaceCustomName = customName;
+    }
 }

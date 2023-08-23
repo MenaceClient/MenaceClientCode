@@ -57,16 +57,10 @@ public class ModelAdapterBook extends ModelAdapter
                 tileentityspecialrenderer.setRendererDispatcher(tileentityrendererdispatcher);
             }
 
-            if (!Reflector.TileEntityEnchantmentTableRenderer_modelBook.exists())
-            {
-                Config.warn("Field not found: TileEntityEnchantmentTableRenderer.modelBook");
-                return null;
-            }
-            else
-            {
-                Reflector.setFieldValue(tileentityspecialrenderer, Reflector.TileEntityEnchantmentTableRenderer_modelBook, modelBase);
-                return tileentityspecialrenderer;
-            }
+
+            ((TileEntityEnchantmentTableRenderer) tileentityspecialrenderer).setModelBook((ModelBook)modelBase);
+            return tileentityspecialrenderer;
+
         }
     }
 }

@@ -70,42 +70,7 @@ public abstract class LayerArmorBase<T extends ModelBase> implements LayerRender
 
             if (!Config.isCustomItems() || !CustomItems.bindCustomArmorTexture(itemstack, flag ? 2 : 1, (String)null))
             {
-                if (Reflector.ForgeHooksClient_getArmorTexture.exists())
-                {
-                    this.renderer.bindTexture(this.getArmorResource(entitylivingbaseIn, itemstack, flag ? 2 : 1, (String)null));
-                }
-                else
-                {
-                    this.renderer.bindTexture(this.getArmorResource(itemarmor, flag));
-                }
-            }
-
-            if (Reflector.ForgeHooksClient_getArmorTexture.exists())
-            {
-                if (ReflectorForge.armorHasOverlay(itemarmor, itemstack))
-                {
-                    int j = itemarmor.getColor(itemstack);
-                    float f3 = (float)(j >> 16 & 255) / 255.0F;
-                    float f4 = (float)(j >> 8 & 255) / 255.0F;
-                    float f5 = (float)(j & 255) / 255.0F;
-                    GlStateManager.color(this.colorR * f3, this.colorG * f4, this.colorB * f5, this.alpha);
-                    t.render(entitylivingbaseIn, p_177182_2_, p_177182_3_, p_177182_5_, p_177182_6_, p_177182_7_, scale);
-
-                    if (!Config.isCustomItems() || !CustomItems.bindCustomArmorTexture(itemstack, flag ? 2 : 1, "overlay"))
-                    {
-                        this.renderer.bindTexture(this.getArmorResource(entitylivingbaseIn, itemstack, flag ? 2 : 1, "overlay"));
-                    }
-                }
-
-                GlStateManager.color(this.colorR, this.colorG, this.colorB, this.alpha);
-                t.render(entitylivingbaseIn, p_177182_2_, p_177182_3_, p_177182_5_, p_177182_6_, p_177182_7_, scale);
-
-                if (!this.skipRenderGlint && itemstack.hasEffect() && (!Config.isCustomItems() || !CustomItems.renderCustomArmorEffect(entitylivingbaseIn, itemstack, t, p_177182_2_, p_177182_3_, partialTicks, p_177182_5_, p_177182_6_, p_177182_7_, scale)))
-                {
-                    this.renderGlint(entitylivingbaseIn, t, p_177182_2_, p_177182_3_, partialTicks, p_177182_5_, p_177182_6_, p_177182_7_, scale);
-                }
-
-                return;
+                this.renderer.bindTexture(this.getArmorResource(itemarmor, flag));
             }
 
             switch (itemarmor.getArmorMaterial())

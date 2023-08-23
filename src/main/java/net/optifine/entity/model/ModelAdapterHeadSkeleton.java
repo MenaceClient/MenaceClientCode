@@ -1,6 +1,7 @@
 package net.optifine.entity.model;
 
 import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelHumanoidHead;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelSkeletonHead;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
@@ -57,16 +58,10 @@ public class ModelAdapterHeadSkeleton extends ModelAdapter
                 tileentityspecialrenderer.setRendererDispatcher(tileentityrendererdispatcher);
             }
 
-            if (!Reflector.TileEntitySkullRenderer_humanoidHead.exists())
-            {
-                Config.warn("Field not found: TileEntitySkullRenderer.humanoidHead");
-                return null;
-            }
-            else
-            {
-                Reflector.setFieldValue(tileentityspecialrenderer, Reflector.TileEntitySkullRenderer_humanoidHead, modelBase);
-                return tileentityspecialrenderer;
-            }
+
+            ((TileEntitySkullRenderer) tileentityspecialrenderer).setHumanoidHead((ModelHumanoidHead) modelBase);
+            return tileentityspecialrenderer;
+
         }
     }
 }

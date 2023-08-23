@@ -147,4 +147,15 @@ public class ModelWolf extends ModelBase
         this.wolfHeadMain.rotateAngleY = netHeadYaw / (180F / (float)Math.PI);
         this.wolfTail.rotateAngleX = ageInTicks;
     }
+
+    public ModelRenderer getWolfTail()
+    {
+        return this.wolfTail;
+    }
+
+    public ModelRenderer getWolfMane()
+    {
+        return this.wolfMane;
+    }
+
 }

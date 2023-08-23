@@ -1,7 +1,7 @@
 package dev.menace.utils.session;
 
 import dev.menace.ui.altmanager.DirectLoginScreen.LoginMode;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import fr.litarvan.openauth.microsoft.MicrosoftAuthenticationException;
 import net.minecraft.client.Minecraft;
 

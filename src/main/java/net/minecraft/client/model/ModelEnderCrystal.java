@@ -48,4 +48,17 @@ public class ModelEnderCrystal extends ModelBase
         this.cube.render(scale);
         GlStateManager.popMatrix();
     }
+
+    public ModelRenderer getCube() {
+        	return this.cube;
+    }
+
+    public ModelRenderer getGlass() {
+        	return this.glass;
+    }
+
+    public ModelRenderer getBase() {
+        	return this.base;
+    }
+
 }

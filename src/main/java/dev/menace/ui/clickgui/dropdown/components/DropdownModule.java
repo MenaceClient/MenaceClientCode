@@ -1,17 +1,14 @@
 package dev.menace.ui.clickgui.dropdown.components;
 
 import dev.menace.Menace;
-import dev.menace.module.Category;
 import dev.menace.module.Module;
 import dev.menace.module.settings.*;
 import dev.menace.ui.clickgui.dropdown.components.settings.*;
-import dev.menace.utils.misc.ChatUtils;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.ColorUtils;
 import dev.menace.utils.render.RenderUtils;
 import dev.menace.utils.render.font.MenaceFontRenderer;
 import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
 
 import java.awt.*;
 import java.util.ArrayList;

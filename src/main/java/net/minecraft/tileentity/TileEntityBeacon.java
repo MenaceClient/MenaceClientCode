@@ -432,6 +432,16 @@ public class TileEntityBeacon extends TileEntityLockable implements ITickable, I
         }
     }
 
+    public String getCustomName()
+    {
+        return this.customName;
+    }
+
+    public void setCustomName(String name)
+    {
+        this.customName = name;
+    }
+
     public static class BeamSegment
     {
         private final float[] colors;

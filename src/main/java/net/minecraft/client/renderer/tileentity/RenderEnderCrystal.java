@@ -37,4 +37,10 @@ public class RenderEnderCrystal extends Render<EntityEnderCrystal>
     {
         return enderCrystalTextures;
     }
+
+    public void setModelEnderCrystal(ModelBase modelEnderCrystal)
+    {
+        this.modelEnderCrystal = modelEnderCrystal;
+    }
+
 }

@@ -50,16 +50,10 @@ public class ModelAdapterMinecart extends ModelAdapter
         RenderManager rendermanager = Minecraft.getMinecraft().getRenderManager();
         RenderMinecart renderminecart = new RenderMinecart(rendermanager);
 
-        if (!Reflector.RenderMinecart_modelMinecart.exists())
-        {
-            Config.warn("Field not found: RenderMinecart.modelMinecart");
-            return null;
-        }
-        else
-        {
-            Reflector.setFieldValue(renderminecart, Reflector.RenderMinecart_modelMinecart, modelBase);
-            renderminecart.shadowSize = shadowSize;
-            return renderminecart;
-        }
+
+        renderminecart.setModelMinecart(modelBase);
+        renderminecart.shadowSize = shadowSize;
+        return renderminecart;
+
     }
 }

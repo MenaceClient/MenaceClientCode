@@ -51,14 +51,13 @@ public class Module {
             }
         }
 
-        visible = new BooleanSetting("Visible", true, true);
-        settings.add(visible);
-
         ModuleManager.modules.add(this);
     }
 
     public void addSettings(Setting... settings) {
         this.settings.addAll(Arrays.asList(settings));
+        visible = new BooleanSetting("Visible", true, true);
+        this.settings.add(visible);
     }
 
     public void onEnable() {

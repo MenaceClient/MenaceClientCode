@@ -57,16 +57,10 @@ public class ModelAdapterSign extends ModelAdapter
                 tileentityspecialrenderer.setRendererDispatcher(tileentityrendererdispatcher);
             }
 
-            if (!Reflector.TileEntitySignRenderer_model.exists())
-            {
-                Config.warn("Field not found: TileEntitySignRenderer.model");
-                return null;
-            }
-            else
-            {
-                Reflector.setFieldValue(tileentityspecialrenderer, Reflector.TileEntitySignRenderer_model, modelBase);
-                return tileentityspecialrenderer;
-            }
+
+            ((TileEntitySignRenderer) tileentityspecialrenderer).setModel((ModelSign) modelBase);
+            return tileentityspecialrenderer;
+
         }
     }
 }

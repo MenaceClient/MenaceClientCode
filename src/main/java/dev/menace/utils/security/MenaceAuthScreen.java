@@ -1,17 +1,11 @@
 package dev.menace.utils.security;
 
 import java.awt.*;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
-import java.nio.charset.StandardCharsets;
 
-import dev.menace.utils.misc.MathUtils;
-import dev.menace.utils.render.font.Fonts;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.font.MenaceFontRenderer;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;

@@ -35,7 +35,7 @@ public class ModelAdapterSilverfish extends ModelAdapter
 
             if (modelPart.startsWith(s))
             {
-                ModelRenderer[] amodelrenderer1 = (ModelRenderer[])((ModelRenderer[])Reflector.getFieldValue(modelsilverfish, Reflector.ModelSilverfish_bodyParts));
+                ModelRenderer[] amodelrenderer1 = modelsilverfish.getSilverfishBodyParts();
 
                 if (amodelrenderer1 == null)
                 {
@@ -55,7 +55,7 @@ public class ModelAdapterSilverfish extends ModelAdapter
 
                 if (modelPart.startsWith(s1))
                 {
-                    ModelRenderer[] amodelrenderer = (ModelRenderer[])((ModelRenderer[])Reflector.getFieldValue(modelsilverfish, Reflector.ModelSilverfish_wingParts));
+                    ModelRenderer[] amodelrenderer = modelsilverfish.getSilverfishWings();
 
                     if (amodelrenderer == null)
                     {

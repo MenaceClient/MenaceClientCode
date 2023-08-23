@@ -2,6 +2,7 @@ package net.minecraft.client.entity;
 
 import dev.menace.Menace;
 import dev.menace.event.events.*;
+import dev.menace.module.modules.movement.SprintModule;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockFenceGate;
@@ -87,6 +88,8 @@ public class EntityPlayerSP extends AbstractClientPlayer
     private float horseJumpPower;
     public float timeInPortal;
     public float prevTimeInPortal;
+    public float prevRotationPitchHead;
+    public float rotationPitchHead;
 
     public EntityPlayerSP(Minecraft mcIn, World worldIn, NetHandlerPlayClient netHandler, StatFileWriter statFile)
     {
@@ -184,6 +187,14 @@ public class EntityPlayerSP extends AbstractClientPlayer
 
         if (this.isCurrentViewEntity())
         {
+            float yaw = event.getYaw();
+            float pitch = event.getPitch();
+
+            this.rotationYawHead = yaw;
+            this.renderYawOffset = yaw;
+            this.prevRotationPitchHead = this.rotationPitchHead;
+            this.rotationPitchHead = pitch;
+
             double d0 = event.getX() - this.lastReportedPosX;
             double d1 = event.getY() - this.lastReportedPosY;
             double d2 = event.getZ() - this.lastReportedPosZ;
@@ -736,7 +747,8 @@ public class EntityPlayerSP extends AbstractClientPlayer
             this.setSprinting(true);
         }
 
-        if (this.isSprinting() && (this.movementInput.moveForward < f || this.isCollidedHorizontally || !flag3))
+        SprintModule sprint = Menace.instance.moduleManager.sprintModule;
+        if (this.isSprinting() && ((!(sprint.isToggled() && sprint.omni.getValue()) && this.movementInput.moveForward < f) || this.isCollidedHorizontally || !flag3))
         {
             this.setSprinting(false);
         }

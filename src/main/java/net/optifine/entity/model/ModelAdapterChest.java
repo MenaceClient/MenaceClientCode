@@ -57,16 +57,10 @@ public class ModelAdapterChest extends ModelAdapter
                 tileentityspecialrenderer.setRendererDispatcher(tileentityrendererdispatcher);
             }
 
-            if (!Reflector.TileEntityChestRenderer_simpleChest.exists())
-            {
-                Config.warn("Field not found: TileEntityChestRenderer.simpleChest");
-                return null;
-            }
-            else
-            {
-                Reflector.setFieldValue(tileentityspecialrenderer, Reflector.TileEntityChestRenderer_simpleChest, modelBase);
-                return tileentityspecialrenderer;
-            }
+
+            ((TileEntityChestRenderer) tileentityspecialrenderer).setSimpleChest((ModelChest) modelBase);
+            return tileentityspecialrenderer;
+
         }
     }
 }

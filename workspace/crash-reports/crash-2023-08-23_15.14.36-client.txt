@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 23/08/23 3:14 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at dev.menace.module.modules.combat.KillauraModule.lambda$new$0(KillauraModule.java:161)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:149)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:137)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1984)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:913)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:274)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at dev.menace.module.modules.combat.KillauraModule.lambda$new$0(KillauraModule.java:161)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:149)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:137)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 1445162
+	Entity Name: ExterminateYT
+	Entity's Exact location: 164.20, 62.00, 176.58
+	Entity's Block location: 164.00,62.00,176.00 - World: (164,62,176), Chunk: (at 4,3,0 in 10,11; contains blocks 160,0,176 to 175,255,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityPlayerSP['ExterminateYT'/1445162, l='MpServer', x=164.20, y=62.00, z=176.58], EntityOtherPlayerMP['snowieowo'/1437212, l='MpServer', x=180.91, y=72.00, z=137.31]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 211.00,60.00,162.00 - World: (211,60,162), Chunk: (at 3,3,2 in 13,10; contains blocks 208,0,160 to 223,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 49112 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 171 total; [EntityPig['Pig'/1421077, l='MpServer', x=147.34, y=60.00, z=154.41], EntityPlayerSP['ExterminateYT'/1445162, l='MpServer', x=164.20, y=62.00, z=176.58], EntityPig['Pig'/1421076, l='MpServer', x=142.80, y=60.00, z=155.54], EntityPig['Pig'/1421079, l='MpServer', x=144.23, y=60.00, z=149.52], EntityPig['Pig'/1421078, l='MpServer', x=146.06, y=60.00, z=154.34], EntityPig['Pig'/1421073, l='MpServer', x=144.94, y=60.00, z=152.00], EntityPig['Pig'/1421072, l='MpServer', x=148.53, y=60.00, z=150.66], EntityPig['Pig'/1421075, l='MpServer', x=144.71, y=60.00, z=156.53], EntityPig['Pig'/1421074, l='MpServer', x=147.53, y=60.00, z=149.44], EntityPig['Pig'/1421085, l='MpServer', x=143.84, y=60.00, z=153.13], EntityOtherPlayerMP['Justa_Visitor'/1441303, l='MpServer', x=163.25, y=-272.44, z=206.34], EntityPig['Pig'/1421084, l='MpServer', x=146.38, y=60.00, z=149.50], EntityOtherPlayerMP['snowieowo'/1437212, l='MpServer', x=180.91, y=72.00, z=137.31], EntityPig['Pig'/1421087, l='MpServer', x=147.26, y=60.00, z=154.17], EntityPig['Pig'/1421086, l='MpServer', x=145.16, y=60.00, z=149.34], EntityVillager['Aim1'/1425182, l='MpServer', x=169.50, y=62.00, z=134.50], EntityPig['Pig'/1421081, l='MpServer', x=145.06, y=60.00, z=149.50], EntityPig['Pig'/1421080, l='MpServer', x=141.50, y=60.00, z=153.16], EntityOtherPlayerMP['Alfonzo_Christia'/1442411, l='MpServer', x=184.25, y=62.00, z=211.16], EntityPig['Pig'/1421083, l='MpServer', x=148.53, y=60.00, z=151.72], EntityPig['Pig'/1421082, l='MpServer', x=143.69, y=60.00, z=151.28], EntityVillager['Aim4'/1228546, l='MpServer', x=185.50, y=62.00, z=134.50], EntityVillager['Aim10'/1440516, l='MpServer', x=189.50, y=75.00, z=134.50], EntityPig['Pig'/1421063, l='MpServer', x=140.44, y=60.00, z=154.31], EntityVillager['Aim7'/1440515, l='MpServer', x=174.50, y=73.00, z=134.50], EntityPig['Pig'/1421069, l='MpServer', x=147.13, y=60.00, z=153.22], EntityPig['Pig'/1421068, l='MpServer', x=145.84, y=60.00, z=153.13], EntityPig['Pig'/1421071, l='MpServer', x=140.38, y=60.00, z=150.56], EntityPig['Pig'/1421070, l='MpServer', x=140.44, y=60.00, z=152.00], EntityPig['Pig'/1421065, l='MpServer', x=145.76, y=60.00, z=150.94], EntityPig['Pig'/1421064, l='MpServer', x=140.44, y=60.00, z=153.09], EntityPig['Pig'/1421067, l='MpServer', x=141.53, y=60.00, z=154.25], EntityPig['Pig'/1421066, l='MpServer', x=148.53, y=60.00, z=153.78], EntityPig['Pig'/1421109, l='MpServer', x=143.69, y=60.00, z=155.53], EntityPig['Pig'/1421108, l='MpServer', x=141.35, y=60.00, z=150.71], EntityPig['Pig'/1421111, l='MpServer', x=142.41, y=60.00, z=148.38], EntityPig['Pig'/1421110, l='MpServer', x=146.27, y=60.00, z=156.29], EntityCow['Cow'/1427766, l='MpServer', x=155.78, y=62.00, z=135.44], EntityPig['Pig'/1421105, l='MpServer', x=148.47, y=60.00, z=152.91], EntityPig['Pig'/1421104, l='MpServer', x=143.74, y=60.00, z=150.78], EntityPig['Pig'/1421107, l='MpServer', x=142.63, y=60.00, z=149.53], EntityPig['Pig'/1421106, l='MpServer', x=144.91, y=60.00, z=153.19], EntityPig['Pig'/1421117, l='MpServer', x=144.53, y=60.00, z=154.25], EntityPig['Pig'/1421116, l='MpServer', x=148.50, y=60.00, z=150.41], EntityPig['Pig'/1421119, l='MpServer', x=145.09, y=60.00, z=156.63], EntityOtherPlayerMP['Justa_Visitor'/1441303, l='MpServer', x=211.50, y=61.00, z=165.16], EntityCow['Cow'/1427775, l='MpServer', x=159.28, y=62.00, z=135.44], EntityPig['Pig'/1421118, l='MpServer', x=144.84, y=60.00, z=150.81], EntityCow['Cow'/1427774, l='MpServer', x=151.44, y=62.00, z=135.44], EntityPig['Pig'/1421113, l='MpServer', x=142.91, y=60.00, z=152.63], EntityPig['Pig'/1421112, l='MpServer', x=141.38, y=60.00, z=149.56], EntityCow['Cow'/1427768, l='MpServer', x=158.38, y=62.00, z=135.44], EntityPig['Pig'/1421115, l='MpServer', x=147.50, y=60.00, z=151.47], EntityPig['Pig'/1421114, l='MpServer', x=141.69, y=60.00, z=152.41], EntityCow['Cow'/1427770, l='MpServer', x=155.00, y=62.00, z=135.84], EntityVillager['Aim2'/1425210, l='MpServer', x=174.50, y=62.00, z=134.50], EntityPig['Pig'/1421093, l='MpServer', x=146.02, y=60.00, z=152.57], EntityPig['Pig'/1421092, l='MpServer', x=146.30, y=60.00, z=151.90], EntityPig['Pig'/1421095, l='MpServer', x=145.09, y=60.00, z=155.38], EntityPig['Pig'/1421094, l='MpServer', x=146.30, y=60.00, z=155.48], EntityPig['Pig'/1421089, l='MpServer', x=144.95, y=60.00, z=148.49], EntityPig['Pig'/1421088, l='MpServer', x=140.97, y=60.00, z=151.81], EntityPig['Pig'/1421091, l='MpServer', x=148.44, y=60.00, z=152.63], EntityPig['Pig'/1421090, l='MpServer', x=142.50, y=60.00, z=156.53], EntityPig['Pig'/1421101, l='MpServer', x=145.06, y=60.00, z=154.39], EntityPig['Pig'/1421100, l='MpServer', x=142.91, y=60.00, z=153.34], EntityVillager['DamageTest1'/58, l='MpServer', x=169.50, y=62.00, z=168.50], EntityPig['Pig'/1421103, l='MpServer', x=148.56, y=60.00, z=154.56], EntityVillager['DamageTest2'/59, l='MpServer', x=169.50, y=62.00, z=174.50], EntityPig['Pig'/1421102, l='MpServer', x=143.72, y=60.00, z=149.16], EntityZombie['NormalKnockBack'/60, l='MpServer', x=161.50, y=62.00, z=176.50], EntityPig['Pig'/1421097, l='MpServer', x=147.44, y=60.00, z=155.53], EntityZombie['KnockBack2'/61, l='MpServer', x=158.50, y=62.00, z=172.50], EntityPig['Pig'/1421096, l='MpServer', x=142.56, y=60.00, z=150.75], EntityZombie['KnockBack1'/62, l='MpServer', x=161.50, y=62.00, z=168.50], EntityPig['Pig'/1421099, l='MpServer', x=147.34, y=60.00, z=155.50], EntityPig['Pig'/1421098, l='MpServer', x=141.55, y=60.00, z=150.82], EntityCow['Cow'/1427796, l='MpServer', x=156.51, y=62.00, z=135.84], EntityArmorStand['§6Step'/73, l='MpServer', x=208.50, y=65.66, z=140.50], EntityArmorStand['§6Fastladder'/75, l='MpServer', x=208.50, y=65.66, z=180.50], EntityArmorStand['§6Esp'/76, l='MpServer', x=208.50, y=65.66, z=199.50], EntityArmorStand['§6KillauraAimTest 1'/77, l='MpServer', x=190.50, y=65.66, z=170.50], EntityArmorStand['§6KillauraAimTest 2'/78, l='MpServer', x=179.50, y=65.66, z=170.50], EntityArmorStand['§6KillauraSwitchTest'/79, l='MpServer', x=189.50, y=65.66, z=186.50], EntityArmorStand['§6KillauraMultiTest1'/80, l='MpServer', x=179.50, y=65.66, z=186.50], EntityPig['Pig'/1421125, l='MpServer', x=142.56, y=60.00, z=151.88], EntityArmorStand['§6Velocity'/81, l='MpServer', x=155.50, y=65.66, z=165.50], EntityPig['Pig'/1421124, l='MpServer', x=142.72, y=60.00, z=154.25], EntityPig['Pig'/1421127, l='MpServer', x=142.53, y=60.00, z=148.44], EntityArmorStand['§6KillauraMultiTest3'/82, l='MpServer', x=159.50, y=65.66, z=152.50], EntityPig['Pig'/1421126, l='MpServer', x=143.66, y=60.00, z=156.53], EntityArmorStand['§6KillauraWallTest'/83, l='MpServer', x=181.50, y=65.66, z=139.50], EntityCow['Cow'/1427782, l='MpServer', x=152.42, y=62.00, z=135.82], EntityArmorStand['§6DamageTest'/84, l='MpServer', x=169.50, y=65.66, z=165.50], EntityPig['Pig'/1421121, l='MpServer', x=143.69, y=60.00, z=149.66], EntityCow['Cow'/1427777, l='MpServer', x=157.98, y=62.00, z=135.44], EntityArmorStand['§6Snow'/85, l='MpServer', x=207.50, y=65.66, z=156.50], EntityPig['Pig'/1421120, l='MpServer', x=147.50, y=60.00, z=150.44], EntityCow['Cow'/1427776, l='MpServer', x=159.53, y=62.00, z=135.84], EntityArmorStand['§6PVP'/86, l='MpServer', x=181.50, y=65.66, z=160.50], EntityPig['Pig'/1421123, l='MpServer', x=143.63, y=60.00, z=148.44], EntityArmorStand['§6ChestStealer'/87, l='MpServer', x=200.50, y=65.66, z=195.50], EntityPig['Pig'/1421122, l='MpServer', x=143.69, y=60.00, z=156.53], EntityCow['Cow'/1427778, l='MpServer', x=153.59, y=62.00, z=135.44], EntityArmorStand['§6BedFucker'/88, l='MpServer', x=185.50, y=65.66, z=195.50], EntityCow['Cow'/1427789, l='MpServer', x=156.78, y=62.00, z=135.44], EntityCow['Cow'/1427788, l='MpServer', x=158.08, y=62.00, z=135.84], EntityCow['Cow'/1427791, l='MpServer', x=151.44, y=62.00, z=135.84], EntityArmorStand['§6KillauraMultiTest4'/91, l='MpServer', x=147.50, y=65.66, z=139.50], EntityCow['Cow'/1427790, l='MpServer', x=153.78, y=62.00, z=135.44], EntityPig['Pig'/1421129, l='MpServer', x=146.53, y=60.00, z=148.47], EntityPig['Pig'/1421128, l='MpServer', x=141.44, y=60.00, z=155.44], EntityCow['Cow'/1427784, l='MpServer', x=152.53, y=62.00, z=135.44], EntityArmorStand['§6KillauraMultiTest2'/94, l='MpServer', x=144.50, y=65.66, z=152.50], EntityPig['Pig'/1421131, l='MpServer', x=146.24, y=60.00, z=150.60], EntityCow['Cow'/1427787, l='MpServer', x=152.78, y=62.00, z=135.44], EntityPig['Pig'/1421130, l='MpServer', x=147.41, y=60.00, z=152.94], EntityCow['Cow'/1427786, l='MpServer', x=155.19, y=62.00, z=135.84], EntitySheep['Sheep'/1432949, l='MpServer', x=157.50, y=61.00, z=150.50], EntityArmorStand['§6TNTBlock'/97, l='MpServer', x=151.50, y=65.66, z=182.50], EntitySheep['Sheep'/1432948, l='MpServer', x=156.50, y=61.00, z=150.50], EntitySheep['Sheep'/1432945, l='MpServer', x=161.50, y=61.00, z=149.50], EntityArmorStand['§6NoRotateSet'/4453, l='MpServer', x=203.50, y=65.47, z=169.41], EntitySheep['Sheep'/1432944, l='MpServer', x=160.50, y=61.00, z=149.50], EntitySheep['Sheep'/1432947, l='MpServer', x=155.50, y=61.00, z=150.50], EntitySheep['Sheep'/1432946, l='MpServer', x=162.50, y=61.00, z=149.50], EntitySheep['Sheep'/1432957, l='MpServer', x=156.50, y=61.00, z=151.50], EntitySheep['Sheep'/1432956, l='MpServer', x=155.50, y=61.00, z=151.50], EntitySheep['Sheep'/1432959, l='MpServer', x=158.50, y=61.00, z=151.50], EntityVillager['Aim9'/1425023, l='MpServer', x=184.50, y=74.00, z=134.50], EntitySheep['Sheep'/1432955, l='MpServer', x=163.50, y=61.00, z=150.50], EntitySheep['Sheep'/1432935, l='MpServer', x=157.50, y=61.00, z=148.50], EntitySheep['Sheep'/1432941, l='MpServer', x=157.50, y=61.00, z=149.50], EntitySheep['Sheep'/1432943, l='MpServer', x=159.50, y=61.00, z=149.50], EntitySheep['Sheep'/1432942, l='MpServer', x=158.50, y=61.00, z=149.50], EntitySheep['Sheep'/1432937, l='MpServer', x=159.50, y=61.00, z=148.50], EntitySheep['Sheep'/1432939, l='MpServer', x=161.50, y=61.00, z=148.50], EntitySheep['Sheep'/1432981, l='MpServer', x=162.50, y=61.00, z=153.50], EntitySheep['Sheep'/1432983, l='MpServer', x=155.50, y=61.00, z=154.50], EntitySheep['Sheep'/1432982, l='MpServer', x=163.50, y=61.00, z=153.50], EntitySheep['Sheep'/1432977, l='MpServer', x=158.50, y=61.00, z=153.50], EntitySheep['Sheep'/1445008, l='MpServer', x=191.00, y=62.00, z=183.09], EntitySheep['Sheep'/1432991, l='MpServer', x=163.50, y=61.00, z=154.50], EntitySheep['Sheep'/1432990, l='MpServer', x=162.50, y=61.00, z=154.50], EntitySheep['Sheep'/1432987, l='MpServer', x=159.50, y=61.00, z=154.50], EntitySheep['Sheep'/1432986, l='MpServer', x=158.50, y=61.00, z=154.50], EntitySheep['Sheep'/1432965, l='MpServer', x=155.50, y=61.00, z=152.50], EntitySheep['Sheep'/1432967, l='MpServer', x=157.50, y=61.00, z=152.50], EntitySheep['Sheep'/1432973, l='MpServer', x=163.50, y=61.00, z=152.50], EntitySheep['Sheep'/1432974, l='MpServer', x=155.50, y=61.00, z=153.50], EntitySheep['Sheep'/1432969, l='MpServer', x=159.50, y=61.00, z=152.50], EntitySheep['Sheep'/1432968, l='MpServer', x=158.50, y=61.00, z=152.50], EntityVillager['Aim6'/1425035, l='MpServer', x=169.50, y=72.50, z=134.50], EntityVillager['Aim8'/1425034, l='MpServer', x=179.50, y=73.50, z=134.50], EntityOtherPlayerMP['snowieowo'/1437212, l='MpServer', x=180.91, y=72.00, z=137.31], EntitySheep['Sheep'/1445053, l='MpServer', x=186.81, y=62.00, z=185.84], EntityOtherPlayerMP['snowieowo'/1437212, l='MpServer', x=180.91, y=72.00, z=137.31], EntitySheep['Sheep'/1445048, l='MpServer', x=187.56, y=62.00, z=188.66], EntitySheep['Sheep'/1445029, l='MpServer', x=188.34, y=62.00, z=187.25], EntitySheep['Sheep'/1432998, l='MpServer', x=162.50, y=61.00, z=155.50], EntitySheep['Sheep'/1432993, l='MpServer', x=157.50, y=61.00, z=155.50], EntitySheep['Sheep'/1432992, l='MpServer', x=156.50, y=61.00, z=155.50], EntitySheep['Sheep'/1432995, l='MpServer', x=159.50, y=61.00, z=155.50], EntitySheep['Sheep'/1432994, l='MpServer', x=158.50, y=61.00, z=155.50], EntitySheep['Sheep'/1433000, l='MpServer', x=158.50, y=61.00, z=156.50], EntitySheep['Sheep'/1433003, l='MpServer', x=161.50, y=61.00, z=156.50], EntitySheep['Sheep'/1433002, l='MpServer', x=160.50, y=61.00, z=156.50], EntitySheep['Sheep'/1445075, l='MpServer', x=192.47, y=62.00, z=184.38], EntitySheep['Sheep'/1445057, l='MpServer', x=192.50, y=62.00, z=185.41], EntitySheep['Sheep'/1445104, l='MpServer', x=189.94, y=62.00, z=183.94], EntitySheep['Sheep'/1444586, l='MpServer', x=186.63, y=62.00, z=184.69]]
+	Retry entities: 0 total; []
+	Server brand: DionaSpigot (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:355)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2531)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:295)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_382, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 572068536 bytes (545 MB) / 1060110336 bytes (1011 MB) up to 1060110336 bytes (1011 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: gamerswordpack.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M6_pre2
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 536.23
+	OpenGlRenderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

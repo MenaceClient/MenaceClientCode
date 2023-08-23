@@ -2,7 +2,7 @@ package dev.menace.ui.custom;
 
 import dev.menace.Menace;
 import dev.menace.ui.altmanager.DirectLoginScreen;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.GLSLShader;
 import dev.menace.utils.render.RenderUtils;
 import dev.menace.utils.render.font.Fonts;

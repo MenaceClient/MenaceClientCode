@@ -134,11 +134,6 @@ public class IntegratedServer extends MinecraftServer
                 {
                     worldserver1.getWorldInfo().setGameType(this.getGameType());
                 }
-
-                if (Reflector.EventBus.exists())
-                {
-                    Reflector.postForgeBusEvent(Reflector.WorldEvent_Load_Constructor, worldserver1);
-                }
             }
 
             this.getConfigurationManager().setPlayerManager(new WorldServer[] {worldserver});

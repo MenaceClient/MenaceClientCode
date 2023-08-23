@@ -116,4 +116,8 @@ public class RenderMinecart<T extends EntityMinecart> extends Render<T>
         Minecraft.getMinecraft().getBlockRendererDispatcher().renderBlockBrightness(state, minecart.getBrightness(partialTicks));
         GlStateManager.popMatrix();
     }
+
+    public void setModelMinecart(ModelBase modelMinecart) {
+        this.modelMinecart = modelMinecart;
+    }
 }

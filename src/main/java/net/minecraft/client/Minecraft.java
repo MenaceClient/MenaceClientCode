@@ -341,7 +341,13 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.refreshResources();
         this.renderEngine = new TextureManager(this.mcResourceManager);
         this.mcResourceManager.registerReloadListener(this.renderEngine);
+        //TODO: Menace Splashscreen
         this.drawSplashScreen(this.renderEngine);
+
+        if (this.gameSettings.fullScreen && !this.fullscreen) {
+            this.toggleFullscreen();
+        }
+
         this.skinManager = new SkinManager(this.renderEngine, new File(this.fileAssets, "skins"), this.sessionService);
         this.saveLoader = new AnvilSaveConverter(new File(this.mcDataDir, "saves"));
         this.mcSoundHandler = new SoundHandler(this.mcResourceManager, this.gameSettings);
@@ -417,11 +423,6 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         this.mojangLogo = null;
         this.loadingScreen = new LoadingScreenRenderer(this);
 
-        if (this.gameSettings.fullScreen && !this.fullscreen)
-        {
-            this.toggleFullscreen();
-        }
-
         try
         {
             Display.setVSyncEnabled(this.gameSettings.enableVsync);
@@ -477,23 +478,31 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         }
     }
 
-    private void setInitialDisplayMode() throws LWJGLException
-    {
-        if (this.fullscreen)
-        {
-            Display.setFullscreen(true);
-            DisplayMode displaymode = Display.getDisplayMode();
-            this.displayWidth = Math.max(1, displaymode.getWidth());
-            this.displayHeight = Math.max(1, displaymode.getHeight());
+    private void setInitialDisplayMode() throws LWJGLException {
+        if (fullscreen) {
+            if (Menace.instance.borderlessFullscreen) {
+                System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
+            } else {
+                Display.setFullscreen(true);
+                DisplayMode displaymode = Display.getDisplayMode();
+                Minecraft.getMinecraft().displayWidth = Math.max(1, displaymode.getWidth());
+                Minecraft.getMinecraft().displayHeight = Math.max(1, displaymode.getHeight());
+            }
+        } else {
+            if (Menace.instance.borderlessFullscreen) {
+                System.setProperty("org.lwjgl.opengl.Window.undecorated", "false");
+            } else {
+                Display.setDisplayMode(new DisplayMode(displayWidth, displayHeight));
+            }
         }
-        else
-        {
-            Display.setDisplayMode(new DisplayMode(this.displayWidth, this.displayHeight));
-        }
+
+        Display.setResizable(false);
+        Display.setResizable(true);
     }
 
     private void setWindowIcon()
     {
+        //TODO: Menace Window Icon
         Util.EnumOS util$enumos = Util.getOSType();
 
         if (util$enumos != Util.EnumOS.OSX)
@@ -1418,61 +1427,66 @@ public class Minecraft implements IThreadListener, IPlayerUsage
         }
     }
 
-    public void toggleFullscreen()
-    {
-        try
-        {
+    public void toggleFullscreen() {
+        try {
             this.fullscreen = !this.fullscreen;
             this.gameSettings.fullScreen = this.fullscreen;
 
-            if (this.fullscreen)
-            {
+            if (this.fullscreen) {
                 this.updateDisplayMode();
                 this.displayWidth = Display.getDisplayMode().getWidth();
                 this.displayHeight = Display.getDisplayMode().getHeight();
 
-                if (this.displayWidth <= 0)
-                {
+                if (this.displayWidth <= 0) {
                     this.displayWidth = 1;
                 }
 
-                if (this.displayHeight <= 0)
-                {
+                if (this.displayHeight <= 0) {
                     this.displayHeight = 1;
                 }
-            }
-            else
-            {
+            } else {
                 Display.setDisplayMode(new DisplayMode(this.tempDisplayWidth, this.tempDisplayHeight));
                 this.displayWidth = this.tempDisplayWidth;
                 this.displayHeight = this.tempDisplayHeight;
 
-                if (this.displayWidth <= 0)
-                {
+                if (this.displayWidth <= 0) {
                     this.displayWidth = 1;
                 }
 
-                if (this.displayHeight <= 0)
-                {
+                if (this.displayHeight <= 0) {
                     this.displayHeight = 1;
                 }
             }
 
-            if (this.currentScreen != null)
-            {
+            if (this.currentScreen != null) {
                 this.resize(this.displayWidth, this.displayHeight);
-            }
-            else
-            {
+            } else {
                 this.updateFramebufferSize();
             }
 
             Display.setFullscreen(this.fullscreen);
             Display.setVSyncEnabled(this.gameSettings.enableVsync);
+
+            if (Menace.instance.borderlessFullscreen) {
+                if (fullscreen) {
+                    System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
+                    Display.setDisplayMode(Display.getDesktopDisplayMode());
+                    Display.setLocation(0, 0);
+                    Display.setFullscreen(false);
+                } else {
+                    System.setProperty("org.lwjgl.opengl.Window.undecorated", "false");
+                    Display.setDisplayMode(new DisplayMode(displayWidth, displayHeight));
+                }
+            } else {
+                Display.setFullscreen(fullscreen);
+                System.setProperty("org.lwjgl.opengl.Window.undecorated", "false");
+            }
+
+            Display.setResizable(false);
+            Display.setResizable(true);
+
             this.updateDisplay();
-        }
-        catch (Exception exception)
-        {
+        } catch (Exception exception) {
             logger.error((String)"Couldn\'t toggle fullscreen", (Throwable)exception);
         }
     }

@@ -196,4 +196,15 @@ public class TileEntityChestRenderer extends TileEntitySpecialRenderer<TileEntit
             }
         }
     }
+
+    public void setSimpleChest(ModelChest simpleChestIn)
+    {
+        this.simpleChest = simpleChestIn;
+    }
+
+    public void setLargeChest(ModelChest largeChestIn)
+    {
+        this.largeChest = largeChestIn;
+    }
+
 }

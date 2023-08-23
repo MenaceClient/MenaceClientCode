@@ -59,19 +59,19 @@ public class TileEntityUtils
     {
         if (te instanceof TileEntityBeacon)
         {
-            return (String)Reflector.getFieldValue(te, Reflector.TileEntityBeacon_customName);
+            return ((TileEntityBeacon)te).getCustomName();
         }
         else if (te instanceof TileEntityBrewingStand)
         {
-            return (String)Reflector.getFieldValue(te, Reflector.TileEntityBrewingStand_customName);
+            return ((TileEntityBrewingStand)te).getCustomName();
         }
         else if (te instanceof TileEntityEnchantmentTable)
         {
-            return (String)Reflector.getFieldValue(te, Reflector.TileEntityEnchantmentTable_customName);
+            return ((TileEntityEnchantmentTable)te).getCustomName();
         }
         else if (te instanceof TileEntityFurnace)
         {
-            return (String)Reflector.getFieldValue(te, Reflector.TileEntityFurnace_customName);
+            return ((TileEntityFurnace)te).getCustomName();
         }
         else
         {
@@ -89,42 +89,35 @@ public class TileEntityUtils
         }
     }
 
-    public static boolean setTileEntityRawName(TileEntity te, String name)
+    public static void setTileEntityRawName(TileEntity te, String name)
     {
         if (te instanceof TileEntityBeacon)
         {
-            return Reflector.setFieldValue(te, Reflector.TileEntityBeacon_customName, name);
+            ((TileEntityBeacon)te).setCustomName(name);
         }
         else if (te instanceof TileEntityBrewingStand)
         {
-            return Reflector.setFieldValue(te, Reflector.TileEntityBrewingStand_customName, name);
+            ((TileEntityBrewingStand)te).setCustomName(name);
         }
         else if (te instanceof TileEntityEnchantmentTable)
         {
-            return Reflector.setFieldValue(te, Reflector.TileEntityEnchantmentTable_customName, name);
+            ((TileEntityEnchantmentTable)te).setCustomName(name);
         }
         else if (te instanceof TileEntityFurnace)
         {
-            return Reflector.setFieldValue(te, Reflector.TileEntityFurnace_customName, name);
+            ((TileEntityFurnace)te).setCustomName(name);
         }
         else if (te instanceof TileEntityChest)
         {
             ((TileEntityChest)te).setCustomName(name);
-            return true;
         }
         else if (te instanceof TileEntityDispenser)
         {
             ((TileEntityDispenser)te).setCustomName(name);
-            return true;
         }
         else if (te instanceof TileEntityHopper)
         {
             ((TileEntityHopper)te).setCustomName(name);
-            return true;
-        }
-        else
-        {
-            return false;
         }
     }
 }

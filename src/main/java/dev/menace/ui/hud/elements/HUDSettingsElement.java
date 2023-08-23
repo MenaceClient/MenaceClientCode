@@ -4,7 +4,7 @@ import dev.menace.Menace;
 import dev.menace.ui.hud.Element;
 import dev.menace.ui.hud.options.HUDOption;
 import dev.menace.utils.misc.ChatUtils;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 
 import java.awt.*;

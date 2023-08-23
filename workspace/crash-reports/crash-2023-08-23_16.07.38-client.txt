@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 23/08/23 4:07 PM
+Description: Ticking entity
+
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at dev.menace.utils.math.DoubleExponentialSmoothingForLinearSeries.fit(DoubleExponentialSmoothingForLinearSeries.java:27)
+	at dev.menace.utils.player.RotationUtils.smoothRotations(RotationUtils.java:124)
+	at dev.menace.utils.player.RotationUtils.getAuraRotations(RotationUtils.java:115)
+	at dev.menace.module.modules.combat.KillauraModule.lambda$new$0(KillauraModule.java:149)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:149)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:137)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1984)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:913)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:274)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at dev.menace.utils.math.DoubleExponentialSmoothingForLinearSeries.fit(DoubleExponentialSmoothingForLinearSeries.java:27)
+	at dev.menace.utils.player.RotationUtils.smoothRotations(RotationUtils.java:124)
+	at dev.menace.utils.player.RotationUtils.getAuraRotations(RotationUtils.java:115)
+	at dev.menace.module.modules.combat.KillauraModule.lambda$new$0(KillauraModule.java:149)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:149)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:137)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 7078721
+	Entity Name: ExterminateYT
+	Entity's Exact location: 162.48, 42.00, 97.43
+	Entity's Block location: 162.00,42.00,97.00 - World: (162,42,97), Chunk: (at 2,2,1 in 10,6; contains blocks 160,0,96 to 175,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 10 total; [EntityPlayerSP['ExterminateYT'/7078721, l='MpServer', x=162.48, y=42.00, z=97.43], EntityOtherPlayerMP['snopei'/7016649, l='MpServer', x=173.50, y=42.00, z=102.53], EntityOtherPlayerMP['Standing'/43, l='MpServer', x=174.56, y=42.00, z=97.38], EntityOtherPlayerMP['Walking'/46, l='MpServer', x=161.77, y=42.00, z=95.33], EntityOtherPlayerMP['Walking'/49, l='MpServer', x=151.21, y=42.00, z=100.16], EntityOtherPlayerMP['Teleporting'/73, l='MpServer', x=152.13, y=42.00, z=88.50], EntityOtherPlayerMP['Teleporting'/76, l='MpServer', x=149.00, y=44.34, z=87.00], EntityOtherPlayerMP['Wall'/85, l='MpServer', x=158.47, y=42.00, z=86.44], EntityOtherPlayerMP['Wall'/79, l='MpServer', x=170.56, y=42.00, z=86.56], EntityOtherPlayerMP['Wall'/82, l='MpServer', x=164.50, y=42.00, z=86.47]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 196.00,41.00,105.00 - World: (196,41,105), Chunk: (at 4,2,9 in 12,6; contains blocks 192,0,96 to 207,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 619197843 game time, 24000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 32 total; [EntityArmorStand['Killaura-Switch-5'/0, l='MpServer', x=109.53, y=43.78, z=146.31], EntityPlayerSP['ExterminateYT'/7078721, l='MpServer', x=162.48, y=42.00, z=97.43], EntityArmorStand['Killaura-Switch-1'/1, l='MpServer', x=106.41, y=43.78, z=149.50], EntityArmorStand['Killaura-Switch-4'/2, l='MpServer', x=109.50, y=43.78, z=152.56], EntityOtherPlayerMP['snopei'/7016649, l='MpServer', x=173.50, y=42.00, z=102.53], EntityArmorStand['Killaura-Switch-3'/3, l='MpServer', x=112.47, y=43.78, z=149.50], EntityOtherPlayerMP['Standing'/43, l='MpServer', x=174.56, y=42.00, z=97.38], EntityOtherPlayerMP['Walking'/46, l='MpServer', x=161.77, y=42.00, z=95.33], EntityOtherPlayerMP['Teleporting'/73, l='MpServer', x=152.13, y=42.00, z=88.50], EntityArmorStand['§cMore Killaura Stuff'/10, l='MpServer', x=105.31, y=43.59, z=139.84], EntityArmorStand['§3§lWelcome'/11, l='MpServer', x=190.03, y=44.72, z=105.56], EntityArmorStand['§6/ac or /anticheat to select an anticheat'/12, l='MpServer', x=190.03, y=44.47, z=105.56], EntityOtherPlayerMP['Teleporting'/76, l='MpServer', x=149.00, y=44.34, z=87.00], EntityArmorStand['§6/server practice ~ to duel bots or other players'/13, l='MpServer', x=190.03, y=44.22, z=105.56], EntityOtherPlayerMP['Wall'/85, l='MpServer', x=158.47, y=42.00, z=86.44], EntityArmorStand['§cPvP'/14, l='MpServer', x=182.22, y=45.13, z=80.16], EntityArmorStand['§cKillaura'/15, l='MpServer', x=180.50, y=44.00, z=103.25], EntityOtherPlayerMP['Wall'/79, l='MpServer', x=170.56, y=42.00, z=86.56], EntityArmorStand['§cVelocity'/16, l='MpServer', x=149.13, y=43.63, z=110.06], EntityArmorStand['§cJesus'/17, l='MpServer', x=154.63, y=43.63, z=136.38], EntityOtherPlayerMP['Wall'/82, l='MpServer', x=164.50, y=42.00, z=86.47], EntityOtherPlayerMP['Wall'/85, l='MpServer', x=158.47, y=42.00, z=86.44], EntityArmorStand['§cSpeed Test'/21, l='MpServer', x=117.34, y=44.09, z=102.41], EntityArmorStand['§cLongJump'/22, l='MpServer', x=140.22, y=44.34, z=100.94], EntityArmorStand['§cFall'/23, l='MpServer', x=124.38, y=44.72, z=110.94], EntityArmorStand['§cPhase'/24, l='MpServer', x=167.44, y=45.47, z=109.50], EntityArmorStand['§cVoid'/25, l='MpServer', x=182.47, y=46.25, z=135.78], EntityArmorStand['§6§l<------- Velocity test this way'/27, l='MpServer', x=151.81, y=45.13, z=133.06], EntityOtherPlayerMP['snopei'/7016649, l='MpServer', x=173.50, y=42.00, z=102.53], EntityOtherPlayerMP['Standing'/43, l='MpServer', x=174.56, y=42.00, z=97.38], EntityOtherPlayerMP['Walking'/46, l='MpServer', x=161.77, y=42.00, z=95.33], EntityOtherPlayerMP['Walking'/49, l='MpServer', x=151.21, y=42.00, z=100.16]]
+	Retry entities: 0 total; []
+	Server brand: PaperSpigot (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:355)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2531)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:295)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_382, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 730612792 bytes (696 MB) / 999817216 bytes (953 MB) up to 999817216 bytes (953 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: gamerswordpack.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M6_pre2
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 536.23
+	OpenGlRenderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

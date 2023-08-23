@@ -156,6 +156,12 @@ public abstract class RendererLivingEntity<T extends EntityLivingBase> extends R
                 }
 
                 float f7 = entity.prevRotationPitch + (entity.rotationPitch - entity.prevRotationPitch) * partialTicks;
+
+                if (entity == Minecraft.getMinecraft().thePlayer) {
+                    EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
+                    f7 = this.interpolateRotation(player.prevRotationPitchHead, player.rotationPitchHead, partialTicks);
+                }
+
                 this.renderLivingAt(entity, x, y, z);
                 float f8 = this.handleRotationFloat(entity, partialTicks);
                 this.rotateCorpse(entity, f8, f, partialTicks);
@@ -660,11 +666,6 @@ public abstract class RendererLivingEntity<T extends EntityLivingBase> extends R
                         this.renderOffsetLivingLabel(entity, x, y - (entity.isChild() ? (double)(entity.height / 2.0F) : 0.0D), z, s, 0.02666667F, d0);
                     }
                 }
-            }
-
-            if (Reflector.RenderLivingEvent_Specials_Post_Constructor.exists())
-            {
-                Reflector.postForgeBusEvent(Reflector.RenderLivingEvent_Specials_Post_Constructor, entity, this, x, y, z);
             }
         }
     }

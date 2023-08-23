@@ -4,6 +4,18 @@
     "Y": 521.0,
     "Options": {}
   },
+  "ArrayElement": {
+    "X": 920.0,
+    "Y": 0.0,
+    "Options": {
+      "Custom Font": true,
+      "Align": "Right",
+      "Outline": "Full",
+      "Color Mode": "Fade",
+      "Color": -65536,
+      "Color2": -16384000
+    }
+  },
   "GameStatsElement": {
     "X": 0.0,
     "Y": 14.0,

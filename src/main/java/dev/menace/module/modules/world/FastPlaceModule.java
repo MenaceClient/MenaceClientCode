@@ -9,6 +9,7 @@ import dev.menace.module.Module;
 public class FastPlaceModule extends Module {
     public FastPlaceModule() {
         super("FastPlace", "Blocks go brrrrrrrrrr", Category.WORLD);
+        addSettings();
     }
 
     @EventLink

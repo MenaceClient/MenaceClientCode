@@ -30,7 +30,34 @@ public class ModelAdapterDragon extends ModelAdapter
         else
         {
             ModelDragon modeldragon = (ModelDragon)model;
-            return modelPart.equals("head") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 0) : (modelPart.equals("spine") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 1) : (modelPart.equals("jaw") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 2) : (modelPart.equals("body") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 3) : (modelPart.equals("rear_leg") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 4) : (modelPart.equals("front_leg") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 5) : (modelPart.equals("rear_leg_tip") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 6) : (modelPart.equals("front_leg_tip") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 7) : (modelPart.equals("rear_foot") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 8) : (modelPart.equals("front_foot") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 9) : (modelPart.equals("wing") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 10) : (modelPart.equals("wing_tip") ? (ModelRenderer)Reflector.getFieldValue(modeldragon, Reflector.ModelDragon_ModelRenderers, 11) : null)))))))))));
+            switch (modelPart) {
+                case "head":
+                    return modeldragon.getHead();
+                case "spine":
+                    return modeldragon.getSpine();
+                case "jaw":
+                    return modeldragon.getJaw();
+                case "body":
+                    return modeldragon.getBody();
+                case "rear_leg":
+                    return modeldragon.getRearLeg();
+                case "front_leg":
+                    return modeldragon.getFrontLeg();
+                case "rear_leg_tip":
+                    return modeldragon.getRearLegTip();
+                case "front_leg_tip":
+                    return modeldragon.getFrontLegTip();
+                case "rear_foot":
+                    return modeldragon.getRearFoot();
+                case "front_foot":
+                    return modeldragon.getFrontFoot();
+                case "wing":
+                    return modeldragon.getWing();
+                case "wing_tip":
+                    return modeldragon.getWingTip();
+                default:
+                    return null;
+            }
         }
     }
 

@@ -50,4 +50,10 @@ public class RenderBoat extends Render<EntityBoat>
     {
         return boatTextures;
     }
+
+    public void setModelBoat(ModelBase modelBoat)
+    {
+        this.modelBoat = modelBoat;
+    }
+
 }

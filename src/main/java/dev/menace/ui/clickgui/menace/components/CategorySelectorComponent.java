@@ -3,7 +3,7 @@ package dev.menace.ui.clickgui.menace.components;
 import dev.menace.Menace;
 import dev.menace.module.Category;
 import dev.menace.ui.clickgui.menace.MenaceClickGui;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 import dev.menace.utils.render.animtion.Animate;
 import dev.menace.utils.render.animtion.Easing;

@@ -3,13 +3,10 @@ package dev.menace.ui.clickgui.dropdown.components;
 import dev.menace.Menace;
 import dev.menace.module.Category;
 import dev.menace.module.Module;
-import dev.menace.utils.misc.ChatUtils;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 import dev.menace.utils.render.font.MenaceFontRenderer;
-import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
-import org.lwjgl.input.Mouse;
 
 import java.awt.*;
 import java.util.ArrayList;

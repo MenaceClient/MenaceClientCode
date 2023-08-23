@@ -1,8 +1,76 @@
 {
+  "Killaura": {
+    "Toggled": false,
+    "Settings": {
+      "Range": 4.0,
+      "APS": 10.0,
+      "AttackMode": "Single",
+      "SwitchDelay": 372.0,
+      "SwitchTargets": 3.0,
+      "Rotation": {
+        "RotationSpeed": 10.0,
+        "Jitter": false,
+        "JitterStrength": 5.0
+      },
+      "AttackPoint": "Cock",
+      "Sort": "Distance",
+      "FOV": 180.0,
+      "TicksExisted": 0.0,
+      "KeepSprint": false,
+      "ThroughWalls": false,
+      "Raycast": true,
+      "MovementFix": true,
+      "Targets": {
+        "Players": true,
+        "Mobs": true,
+        "Animals": true,
+        "Invisibles": false
+      },
+      "Visible": true
+    }
+  },
+  "Velocity": {
+    "Toggled": false,
+    "Settings": {
+      "Mode": "Simple",
+      "Explosions": true,
+      "Horizontal": 0.0,
+      "Vertical": 0.0,
+      "Smooth": true,
+      "HurtTime": 0.0,
+      "Visible": true
+    }
+  },
+  "Sprint": {
+    "Toggled": true,
+    "Settings": {
+      "Visible": true
+    }
+  },
+  "ClickGui": {
+    "Toggled": false,
+    "Settings": {
+      "Mode": "Dropdown",
+      "Visible": true
+    }
+  },
+  "ESP": {
+    "Toggled": true,
+    "Settings": {
+      "Health Bar": true,
+      "Visible": true
+    }
+  },
   "HUDEditor": {
-    "Toggled": false
+    "Toggled": false,
+    "Settings": {
+      "Visible": true
+    }
   },
   "FastPlace": {
-    "Toggled": false
+    "Toggled": false,
+    "Settings": {
+      "Visible": true
+    }
   }
 }

@@ -23,6 +23,12 @@ public class GuiOptionButton extends GuiButton
         this.enumOptions = p_i45013_4_;
     }
 
+    public GuiOptionButton(int buttonId, int x, int y, int width, int height, GameSettings.Options p_i45013_4_, String p_i45013_5_)
+    {
+        super(buttonId, x, y, width, height, p_i45013_5_);
+        this.enumOptions = p_i45013_4_;
+    }
+
     public GameSettings.Options returnEnumOptions()
     {
         return this.enumOptions;

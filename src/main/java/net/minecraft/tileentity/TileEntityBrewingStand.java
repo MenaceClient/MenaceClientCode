@@ -388,4 +388,14 @@ public class TileEntityBrewingStand extends TileEntityLockable implements ITicka
             this.brewingItemStacks[i] = null;
         }
     }
+
+    public String getCustomName()
+    {
+        return this.customName;
+    }
+
+    public void setCustomName(String customName)
+    {
+        this.customName = customName;
+    }
 }

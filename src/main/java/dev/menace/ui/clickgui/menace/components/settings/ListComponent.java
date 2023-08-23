@@ -1,7 +1,7 @@
 package dev.menace.ui.clickgui.menace.components.settings;
 
 import dev.menace.module.settings.ListSetting;
-import dev.menace.utils.misc.MathUtils;
+import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.RenderUtils;
 
 import java.awt.*;

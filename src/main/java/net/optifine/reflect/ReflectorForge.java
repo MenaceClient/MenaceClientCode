@@ -22,24 +22,6 @@ public class ReflectorForge
     public static Object EVENT_RESULT_DENY = Reflector.getFieldValue(Reflector.Event_Result_DENY);
     public static Object EVENT_RESULT_DEFAULT = Reflector.getFieldValue(Reflector.Event_Result_DEFAULT);
 
-    public static void FMLClientHandler_trackBrokenTexture(ResourceLocation loc, String message)
-    {
-        if (!Reflector.FMLClientHandler_trackBrokenTexture.exists())
-        {
-            Object object = Reflector.call(Reflector.FMLClientHandler_instance, new Object[0]);
-            Reflector.call(object, Reflector.FMLClientHandler_trackBrokenTexture, new Object[] {loc, message});
-        }
-    }
-
-    public static void FMLClientHandler_trackMissingTexture(ResourceLocation loc)
-    {
-        if (!Reflector.FMLClientHandler_trackMissingTexture.exists())
-        {
-            Object object = Reflector.call(Reflector.FMLClientHandler_instance, new Object[0]);
-            Reflector.call(object, Reflector.FMLClientHandler_trackMissingTexture, new Object[] {loc});
-        }
-    }
-
     public static void putLaunchBlackboard(String key, Object value)
     {
         Map map = (Map)Reflector.getFieldValue(Reflector.Launch_blackboard);
