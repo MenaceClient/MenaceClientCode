@@ -1,8 +1,16 @@
 {
+  "Backtrack": {
+    "Toggled": true,
+    "Settings": {
+      "Mode": "Desync",
+      "Delay": 1500.0,
+      "Visible": true
+    }
+  },
   "Killaura": {
     "Toggled": false,
     "Settings": {
-      "Range": 4.0,
+      "Range": 3.3,
       "APS": 10.0,
       "AttackMode": "Single",
       "SwitchDelay": 372.0,

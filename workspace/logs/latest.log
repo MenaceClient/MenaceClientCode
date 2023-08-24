@@ -1,303 +1,103 @@
-[20:26:03] [Client thread/INFO]: Setting user: Player843
-[20:26:03] [Client thread/INFO]: (Session ID is token:0:Player843)
-[20:26:04] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
-[20:26:04] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
-[20:26:04] [Client thread/INFO]: LWJGL Version: 2.9.4
-[20:26:04] [Client thread/INFO]: [OptiFine] 
-[20:26:04] [Client thread/INFO]: [OptiFine] OptiFine_1.8.9_HD_U_M6_pre2
-[20:26:04] [Client thread/INFO]: [OptiFine] Build: null
-[20:26:04] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
-[20:26:04] [Client thread/INFO]: [OptiFine] Java: 1.8.0_382, BellSoft
-[20:26:04] [Client thread/INFO]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
-[20:26:04] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
-[20:26:04] [Client thread/INFO]: [OptiFine] OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2, version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
-[20:26:04] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.6.0
-[20:26:04] [Client thread/INFO]: [OptiFine] Maximum texture size: 32768x32768
-[20:26:04] [VersionCheck/INFO]: [OptiFine] Checking for new version
-[20:26:05] [Client thread/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 536.23
-[20:26:05] [Client thread/INFO]: [Shaders] Vendor:  NVIDIA Corporation
-[20:26:05] [Client thread/INFO]: [Shaders] Renderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
-[20:26:05] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
-[20:26:05] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
-[20:26:05] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
-[20:26:05] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
-[20:26:05] [Client thread/INFO]: [Shaders] Load shaders configuration.
-[20:26:05] [Client thread/INFO]: [Shaders] Save shaders configuration.
-[20:26:05] [Client thread/INFO]: [Shaders] No shaderpack loaded.
-[20:26:05] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
-[20:26:05] [Client thread/INFO]: Reloading ResourceManager: Default, gamerswordpack.zip
-[20:26:05] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
-[20:26:05] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
-[20:26:05] [Client thread/INFO]: [OptiFine] Resource packs: gamerswordpack.zip
-[20:26:05] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
-[20:26:05] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
-[20:26:05] [VersionCheck/INFO]: [OptiFine] Version found: M5
-[20:26:05] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
-[20:26:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:26:05] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[20:26:05] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:26:05] [Thread-6/INFO]: OpenAL initialized.
-[20:26:06] [Sound Library Loader/INFO]: Sound engine started
-[20:26:06] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
-[20:26:07] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
-[20:26:07] [Client thread/INFO]: [OptiFine] Multitexture: false
-[20:26:07] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
-[20:26:07] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/diamond_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/emerald_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/gold_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/coal_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/lapis_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/iron_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/redstone_ore, 1 -> 16
-[20:26:07] [Client thread/INFO]: Created: 1024x1024 textures-atlas
-[20:26:07] [Client thread/INFO]: [OptiFine] Animated sprites: 11
-[20:26:07] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
-[20:26:07] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
-[20:26:07] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
-[20:26:07] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
-[20:26:09] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
-[20:26:09] [Client thread/INFO]: Loaded Platform ViaVersion
-[20:26:09] [Client thread/INFO]: Loading translations...
-[20:26:09] [Client thread/INFO]: Registering protocols...
-[20:26:09] [Client thread/INFO]: Loaded Platform ViaBackwards
-[20:26:09] [Client thread/INFO]: Loaded Platform ViaRewind
-[20:26:09] [Client thread/INFO]: ViaVersion detected lowest supported version by the proxy: 1.4.6/7 (51)
-[20:26:09] [Client thread/INFO]: Highest supported version by the proxy: 1.20.2 (764)
-[20:26:09] [Client thread/WARN]: You are running an outdated Java version, please consider updating it to at least Java 17 (your version is 1.8.0_382). At some point in the future, ViaVersion will no longer be compatible with this version of Java.
-[20:26:09] [Via Async Scheduler 0/INFO]: Finished mapping loading, shutting down loader executor!
-[20:26:09] [Client thread/INFO]: ViaLoadingBase has loaded 3/3 platforms
-[20:26:10] [Via Async Task 1/WARN]: You are running a newer version of the plugin than is released!
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.relauncher.CoreModManager
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.DimensionManager
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$FogColors
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.EventBus
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addDestroyEffects
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addHitEffects
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canCreatureSpawn
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canRenderInLayer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getBedDirection
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getExtendedState
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.hasTileEntity
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isAir
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBed
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.canRiderInteract
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRenderInPass
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRiderSit
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.ForgeEventFactory
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeHooks
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.item.Item.delegate
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getDurabilityForDisplay
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getModel
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.shouldCauseReequipAnimation
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.showDurabilityBar
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.canRenderBreaking
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.getRenderBoundingBox
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.hasFastRenderer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.shouldRenderInPass
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.countEntities
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getCloudRenderer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getSkyRenderer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getWeatherRenderer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IColoredBakedQuad
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.IExtendedBlockState
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IModel
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.IRenderHandler
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.pipeline.LightUtil
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.MinecraftForge
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.ModContainer
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader$VanillaLoader
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderBlockOverlayEvent$OverlayType
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderItemInFrameEvent
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Pre
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Post
-[20:26:13] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Pre
-[20:26:13] [Client thread/INFO]: [OptiFine] *** Reloading custom textures ***
-[20:26:13] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky1.properties
-[20:26:13] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky2.properties
-[20:26:13] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky3.properties
-[20:26:13] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky4.properties
-[20:26:14] [Client thread/INFO]: [OptiFine] Enable face culling: acacia_leaves, birch_leaves, dark_oak_leaves, jungle_leaves, oak_leaves, spruce_leaves
-[20:26:20] [Client thread/INFO]: Connecting to eu.loyisa.cn, 25565
-[20:26:22] [Client thread/INFO]: [CHAT]        
-[20:26:22] [Client thread/INFO]: [CHAT] [+] ExterminateYT
-[20:26:23] [Client thread/INFO]: [CHAT] Diona >> Your client brand is vanilla
-[20:26:52] [Client thread/INFO]: [CHAT] Diona >> You selected: NoCheatPlus
-[20:26:52] [Client thread/FATAL]: Error executing task
-java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'KCGHP_Z219'.
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
-	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:912) [classes/:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:274) [classes/:?]
-	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
-	at Start.main(Start.java:9) [classes/:?]
-Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'KCGHP_Z219'.
-	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
-	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1860) ~[classes/:?]
-	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
-	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
-	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:22) ~[classes/:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
-	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
-	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
-	... 4 more
-[20:26:53] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
-[20:27:05] [Client thread/INFO]: [CHAT] [+] Fyxar
-[20:27:15] [Client thread/INFO]: [CHAT] [-] Fyxar
-[20:27:30] [Client thread/INFO]: [CHAT] [NCP] ExterminateYT failed fight.direction vl=0.613(+0.613)
-[20:27:35] [Client thread/INFO]: [CHAT] [-] HERBALFOX351202
-[20:27:38] [Client thread/INFO]: [CHAT] [NCP] ExterminateYT failed fight.direction vl=0.895(+0.892)
-[20:27:45] [Client thread/INFO]: [CHAT] [+] aerpod
-[20:27:52] [Client thread/INFO]: [CHAT] [+] Fyxar
-[20:27:58] [Client thread/INFO]: [CHAT] [+] HERBALFOX351202
-[20:27:58] [Client thread/INFO]: [CHAT] Diona >> You selected: Vulcan
-[20:27:59] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Speed (B) (vl:1/20): speed=11.90200102286186 max=0.2975 diff=11.60450102286186 ticks=484 deltaY=0.0 | Moving too quickly on the ground.
-[20:27:59] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Speed (D) (vl:1/20): speed=11.90200102286186 max=0.2975 diff=11.60450102286186 ticks=28 deltaY=0.0 tp=715 | Moving too quickly on the ground.
-[20:28:07] [Client thread/INFO]: [CHAT] [-] Fyxar
-[20:28:28] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Velocity (A) (vl:1/15): tick=1 percent=0.0% deltaY=0.0 velocity=0.46075 | Vertical velocity modifications.
-[20:28:29] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Velocity (C) (vl:1/15): tick=1 percent=2.9567012373651647% s=false ls=false deltaXZ=0.02558443597723745 velocityXZ=0.8653033879079637 dY=0.0 | Vertical velocity modifications.
-[20:28:32] [Client thread/INFO]: [CHAT] [+] cheemsdogger
-[20:28:52] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Aim (Y) (vl:1/5): diff=311.4612 dist=1.910075883543533 | Generic rotation analysis heuristic.
-[20:28:55] [Client thread/INFO]: [CHAT] [+] Fyxar
-[20:29:01] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
-[20:29:10] [Client thread/INFO]: [CHAT] [-] Fyxar
-[20:29:20] [Client thread/INFO]: [CHAT] Diona >> You selected: AAC
-[20:29:25] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:1): at: 164.304,62.000,168.623 move: 0.009,0.000,-0.204 pred: 0.046,0.000,-0.199 dist: 0.037 info: ++ PLAYER 
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.04
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 10.02
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:1): at: 159.418,62.000,166.545 move: -0.189,0.000,0.103 pred: -0.166,0.000,0.131 dist: 0.037 info: ++ PLAYER 
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.02
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:2): at: 159.228,62.000,166.648 move: -0.189,0.000,0.104 pred: -0.202,0.000,0.073 dist: 0.034 info: ++ PLAYER 
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.99
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.26
-[20:29:26] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:3): at: 159.403,62.000,166.634 move: 0.188,0.000,-0.066 pred: 0.195,0.000,-0.035 dist: 0.032 info: ++ PLAYER 
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.03
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:25): at: 159.739,62.000,166.516 move: 0.251,0.000,-0.072 pred: 0.103,0.000,-0.076 dist: 0.149 info: ++ PLAYER 
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:5): at: 160.196,62.000,166.392 move: 0.210,0.000,-0.043 pred: 0.200,0.000,-0.073 dist: 0.031 info: ++ PLAYER 
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.25
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.26
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:64): at: 161.172,62.000,166.239 move: -0.389,0.000,0.044 pred: -0.147,0.000,0.075 dist: 0.244 info: ++ PLAYER  vel: 0.125,0.000,-0.022
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.86
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.23
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 10.89
-[20:29:27] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:5): at: 161.488,62.000,166.185 move: -0.123,0.000,-0.043 pred: -0.081,0.000,-0.059 dist: 0.046 info: ++ PLAYER  vel: 0.208,0.000,-0.054
-[20:29:28] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed timer (vl:1): moved too many times: 9.03
-[20:29:28] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:32): at: 161.375,62.000,166.141 move: 0.310,0.000,-0.083 pred: 0.169,0.000,0.010 dist: 0.169 info: ++ PLAYER  vel: 0.014,-0.078,0.000
-[20:29:28] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:102): at: 161.876,62.000,166.009 move: -0.388,0.000,0.176 pred: -0.084,0.000,0.094 dist: 0.315 info: ++ PLAYER  vel: 0.010,-0.078,0.000
-[20:29:28] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:7): at: 161.502,62.000,166.185 move: -0.126,0.000,-0.043 pred: -0.073,0.000,-0.059 dist: 0.056 info: ++ PLAYER  vel: 0.010,-0.078,0.000
-[20:29:51] [Client thread/INFO]: [CHAT] Diona >> You selected: GrimAC
-[20:30:06] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:2.0): .007751 /gl 113
-[20:30:06] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:4.0): .008463 /gl 113
-[20:30:06] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:6.0): .008954 /gl 113
-[20:30:06] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:8.0): .001311 /gl 113
-[20:30:08] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:10.0): .014250 /gl 113
-[20:30:08] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:12.0): .009870 /gl 113
-[20:30:08] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:14.0): .002954 /gl 113
-[20:30:12] [Client thread/INFO]: [CHAT] [+] Fyxar
-[20:30:14] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:16.0): .007447 /gl 113
-[20:30:15] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:18.0): .018231 /gl 113
-[20:30:16] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:20.0): .035859 /gl 113
-[20:30:16] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:22.0): .009898 /gl 113
-[20:30:16] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:24.0): .005405 /gl 113
-[20:30:16] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:26.0): .002931 /gl 113
-[20:30:18] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:28.0): .023624 /gl 113
-[20:30:19] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:30.0): .011002 /gl 113
-[20:30:19] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:32.0): .006007 /gl 113
-[20:30:23] [Client thread/INFO]: [CHAT] [-] Fyxar
-[20:30:27] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed AntiKB (vl:1.0): o: 0.82696
-[20:30:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed AntiKB (vl:2.0): o: 0.83455
-[20:30:29] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed AntiKB (vl:3.0): o: 0.75904
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:34.0): .005997 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:36.0): .030699 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:38.0): .046618 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:40.0): .055360 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:42.0): .060260 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:44.0): .063060 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:46.0): .064857 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:48.0): .059994 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:50.0): .059320 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:52.0): .062241 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:54.0): .026745 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:56.0): .036699 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:58.0): .021853 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:60.0): .020020 /gl 113
-[20:30:54] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:62.0): .022011 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:64.0): .006577 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:66.0): .050876 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:68.0): .062793 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:70.0): .074144 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:72.0): .080542 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:74.0): .063818 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:76.0): .041017 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:78.0): .042164 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:80.0): .082707 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:82.0): .080713 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:84.0): .084435 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:86.0): .075109 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:88.0): .071806 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:90.0): .069068 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:92.0): .038048 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:94.0): .035222 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:96.0): .041302 /gl 113
-[20:30:55] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:98.0): .023402 /gl 113
-[20:31:06] [Client thread/INFO]: [CHAT] [+] Fyxar
-[20:31:09] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
-[20:33:17] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
-[20:33:53] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:1.0): 3.00533 blocks
-[20:33:53] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:2.0): 3.00533 blocks
-[20:34:09] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:3.0): 3.00247 blocks
-[20:34:09] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:4.0): 3.00247 blocks
-[20:34:09] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:5.0): 3.00247 blocks
-[20:34:11] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:6.0): 3.00237 blocks
-[20:34:11] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:7.0): 3.00237 blocks
-[20:34:11] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Reach (vl:8.0): 3.00237 blocks
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:100.0): .001177 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:102.0): .001403 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:104.0): .001527 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:106.0): .025914 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:108.0): .012596 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:110.0): .002612 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:112.0): .011272 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:114.0): .006155 /gl 113
-[20:34:28] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:116.0): .003360 /gl 113
-[20:34:39] [Client thread/INFO]: Stopping!
-[20:34:39] [Client thread/INFO]: SoundSystem shutting down...
-[20:34:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:51:38] [Client thread/INFO]: Setting user: Player16
+[20:51:38] [Client thread/INFO]: (Session ID is token:0:Player16)
+[20:51:40] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
+[20:51:40] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[20:51:40] [Client thread/INFO]: LWJGL Version: 2.9.4
+[20:51:41] [Client thread/INFO]: [OptiFine] 
+[20:51:41] [Client thread/INFO]: [OptiFine] OptiFine_1.8.9_HD_U_M6_pre2
+[20:51:41] [Client thread/INFO]: [OptiFine] Build: null
+[20:51:41] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[20:51:41] [Client thread/INFO]: [OptiFine] Java: 1.8.0_382, BellSoft
+[20:51:41] [Client thread/INFO]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+[20:51:41] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
+[20:51:41] [Client thread/INFO]: [OptiFine] OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2, version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+[20:51:41] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.6.0
+[20:51:41] [Client thread/INFO]: [OptiFine] Maximum texture size: 32768x32768
+[20:51:41] [VersionCheck/INFO]: [OptiFine] Checking for new version
+[20:51:41] [Client thread/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 536.23
+[20:51:41] [Client thread/INFO]: [Shaders] Vendor:  NVIDIA Corporation
+[20:51:41] [Client thread/INFO]: [Shaders] Renderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+[20:51:41] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[20:51:41] [Client thread/INFO]: [Shaders] Load shaders configuration.
+[20:51:41] [Client thread/INFO]: [Shaders] Save shaders configuration.
+[20:51:41] [Client thread/INFO]: [Shaders] No shaderpack loaded.
+[20:51:41] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
+[20:51:42] [VersionCheck/INFO]: [OptiFine] Version found: M5
+[20:51:42] [Client thread/INFO]: Reloading ResourceManager: Default, gamerswordpack.zip
+[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
+[20:51:42] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
+[20:51:42] [Client thread/INFO]: [OptiFine] Resource packs: gamerswordpack.zip
+[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
+[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
+[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
+[20:51:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:51:43] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[20:51:43] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:51:43] [Thread-6/INFO]: OpenAL initialized.
+[20:51:43] [Sound Library Loader/INFO]: Sound engine started
+[20:51:46] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
+[20:51:46] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
+[20:51:46] [Client thread/INFO]: [OptiFine] Multitexture: false
+[20:51:46] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[20:51:46] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[20:51:46] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/diamond_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/emerald_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/gold_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/coal_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/lapis_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/iron_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/redstone_ore, 1 -> 16
+[20:51:47] [Client thread/INFO]: Created: 1024x1024 textures-atlas
+[20:51:47] [Client thread/INFO]: [OptiFine] Animated sprites: 11
+[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
+[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
+[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
+[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
+[20:51:54] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
+[20:51:54] [Client thread/INFO]: Loaded Platform ViaVersion
+[20:51:54] [Client thread/INFO]: Loading translations...
+[20:51:54] [Client thread/INFO]: Registering protocols...
+[20:51:55] [Client thread/INFO]: Loaded Platform ViaBackwards
+[20:51:55] [Client thread/INFO]: Loaded Platform ViaRewind
+[20:51:55] [Client thread/INFO]: ViaVersion detected lowest supported version by the proxy: 1.4.6/7 (51)
+[20:51:55] [Client thread/INFO]: Highest supported version by the proxy: 1.20.2 (764)
+[20:51:55] [Client thread/WARN]: You are running an outdated Java version, please consider updating it to at least Java 17 (your version is 1.8.0_382). At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[20:51:55] [Via Async Scheduler 0/INFO]: Finished mapping loading, shutting down loader executor!
+[20:51:55] [Client thread/INFO]: ViaLoadingBase has loaded 3/3 platforms
+[20:51:56] [Via Async Task 1/WARN]: You are running a newer version of the plugin than is released!

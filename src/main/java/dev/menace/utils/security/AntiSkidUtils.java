@@ -88,7 +88,7 @@ public class AntiSkidUtils {
                 try {
                     File temp = File.createTempFile("ErrorPanel", ".jar");
 
-                    InputStream inputStream = AntiSkidUtils.class.getResourceAsStream("/resources/security/ErrorPanel.jar");
+                    InputStream inputStream = AntiSkidUtils.class.getResourceAsStream("/security/ErrorPanel.jar");
                     FileOutputStream fileOutputStream = new FileOutputStream(temp);
                     byte[] buffer = new byte[1024];
                     int read;
@@ -103,7 +103,8 @@ public class AntiSkidUtils {
                     process = builder.start();
                     process.waitFor();
                 } catch (IOException | InterruptedException e) {
-                    throw new RuntimeException(e);
+                    e.printStackTrace();
+                    //throw new RuntimeException(e);
                 }
                 super.run();
             }

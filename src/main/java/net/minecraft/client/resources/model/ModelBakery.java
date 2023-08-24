@@ -534,11 +534,6 @@ public class ModelBakery
                 TextureAtlasSprite textureatlassprite1 = (TextureAtlasSprite)this.sprites.get(new ResourceLocation(p_bakeModel_1_.resolveTextureName(blockpartface.texture)));
                 boolean flag = true;
 
-                if (Reflector.ForgeHooksClient.exists())
-                {
-                    flag = TRSRTransformation.isInteger(p_bakeModel_2_.getMatrix());
-                }
-
                 if (blockpartface.cullFace != null && flag)
                 {
                     simplebakedmodel$builder.addFaceQuad(p_bakeModel_2_.rotate(blockpartface.cullFace), this.makeBakedQuad(blockpart, blockpartface, textureatlassprite1, enumfacing, p_bakeModel_2_, p_bakeModel_3_));

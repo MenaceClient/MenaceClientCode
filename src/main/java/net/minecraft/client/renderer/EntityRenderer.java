@@ -5,6 +5,7 @@ import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
 import dev.menace.Menace;
 import dev.menace.event.events.EventRender3D;
+import dev.menace.utils.player.EntityFakePlayer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
@@ -475,10 +476,10 @@ public class EntityRenderer implements IResourceManagerReloadListener
             if (this.pointedEntity != null && flag && vec3.distanceTo(vec33) > 3.0D)
             {
                 this.pointedEntity = null;
-                this.mc.objectMouseOver = new MovingObjectPosition(MovingObjectPosition.MovingObjectType.MISS, vec33, (EnumFacing)null, new BlockPos(vec33));
+                this.mc.objectMouseOver = new MovingObjectPosition(MovingObjectPosition.MovingObjectType.MISS, vec33, null, new BlockPos(vec33));
             }
 
-            if (this.pointedEntity != null && (d2 < d1 || this.mc.objectMouseOver == null))
+            if (this.pointedEntity != null && !(this.pointedEntity instanceof EntityFakePlayer) && (d2 < d1 || this.mc.objectMouseOver == null))
             {
                 this.mc.objectMouseOver = new MovingObjectPosition(this.pointedEntity, vec33);
 

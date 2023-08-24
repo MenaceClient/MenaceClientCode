@@ -182,7 +182,6 @@ import net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter;
 import net.minecraft.network.play.server.S48PacketResourcePackSend;
 import net.minecraft.network.play.server.S49PacketUpdateEntityNBT;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.realms.DisconnectedRealmsScreen;
 import net.minecraft.scoreboard.IScoreObjectiveCriteria;
 import net.minecraft.scoreboard.Score;
 import net.minecraft.scoreboard.ScoreObjective;
@@ -563,14 +562,14 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
 
         if (entity != null)
         {
-            entity.serverPosX += packetIn.func_149062_c();
-            entity.serverPosY += packetIn.func_149061_d();
-            entity.serverPosZ += packetIn.func_149064_e();
+            entity.serverPosX += packetIn.getPosX();
+            entity.serverPosY += packetIn.getPosY();
+            entity.serverPosZ += packetIn.getPosZ();
             double d0 = (double)entity.serverPosX / 32.0D;
             double d1 = (double)entity.serverPosY / 32.0D;
             double d2 = (double)entity.serverPosZ / 32.0D;
-            float f = packetIn.func_149060_h() ? (float)(packetIn.func_149066_f() * 360) / 256.0F : entity.rotationYaw;
-            float f1 = packetIn.func_149060_h() ? (float)(packetIn.func_149063_g() * 360) / 256.0F : entity.rotationPitch;
+            float f = packetIn.func_149060_h() ? (float)(packetIn.getYaw() * 360) / 256.0F : entity.rotationYaw;
+            float f1 = packetIn.func_149060_h() ? (float)(packetIn.getPitch() * 360) / 256.0F : entity.rotationPitch;
             entity.setPositionAndRotation2(d0, d1, d2, f, f1, 3, false);
             entity.onGround = packetIn.getOnGround();
         }

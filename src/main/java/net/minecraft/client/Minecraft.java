@@ -862,9 +862,8 @@ public class Minecraft implements IThreadListener, IPlayerUsage
             {
                 this.loadWorld(null);
             }
-            catch (Throwable var5)
+            catch (Throwable ignored)
             {
-                ;
             }
 
             this.mcSoundHandler.unloadSounds();

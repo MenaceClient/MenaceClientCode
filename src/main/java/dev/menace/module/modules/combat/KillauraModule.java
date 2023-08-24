@@ -1,5 +1,6 @@
 package dev.menace.module.modules.combat;
 
+import dev.menace.Menace;
 import dev.menace.event.Listener;
 import dev.menace.event.annotations.EventLink;
 import dev.menace.event.events.EventMove;
@@ -12,6 +13,7 @@ import dev.menace.module.settings.ListSetting;
 import dev.menace.module.settings.NumberSetting;
 import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.misc.ChatUtils;
+import dev.menace.utils.player.EntityFakePlayer;
 import dev.menace.utils.player.RotationUtils;
 import dev.menace.utils.player.SprintHandler;
 import dev.menace.utils.raycast.RaycastUtils;
@@ -262,6 +264,7 @@ public class KillauraModule extends Module {
                 .filter(e -> mc.thePlayer.canEntityBeSeen(e) || throughWalls.getValue())
                 .filter(e -> players.getValue() && e instanceof EntityPlayer || monsters.getValue() && e instanceof EntityMob || passives.getValue() && (e instanceof EntityAnimal || e instanceof EntityVillager))
                 .filter(e -> invisibles.getValue() || !e.isInvisible())
+                .filter(e -> !(e instanceof EntityFakePlayer))
                 .sorted(comparator)
                 .forEach(targets::add);
     }

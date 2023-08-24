@@ -3,6 +3,7 @@ package dev.menace.module;
 import com.google.gson.JsonObject;
 import dev.menace.module.modules.combat.*;
 import dev.menace.module.modules.movement.*;
+import dev.menace.module.modules.player.BlinkModule;
 import dev.menace.module.modules.render.*;
 import dev.menace.module.modules.world.*;
 import dev.menace.utils.file.FileManager;
@@ -16,6 +17,7 @@ public class ModuleManager {
     protected static ArrayList<Module> modules = new ArrayList<>();
 
     //COMBAT
+    BacktrackModule backtrackModule = new BacktrackModule();
     public KillauraModule killauraModule = new KillauraModule();
     public VelocityModule velocityModule = new VelocityModule();
 
@@ -23,6 +25,7 @@ public class ModuleManager {
     public SprintModule sprintModule = new SprintModule();
 
     //PLAYER
+    BlinkModule blinkModule = new BlinkModule();
 
     //RENDER
     ClickGuiModule clickGuiModule = new ClickGuiModule();
