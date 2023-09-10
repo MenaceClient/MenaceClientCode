@@ -1,16 +1,21 @@
 package dev.menace.utils.player;
 
+import dev.menace.Menace;
+import dev.menace.utils.file.FileManager;
 import dev.menace.utils.math.DoubleExponentialSmoothingForLinearSeries;
 import dev.menace.utils.math.Model;
 import dev.menace.utils.misc.ChatUtils;
 import dev.menace.utils.raycast.RaycastUtils;
+import dev.menace.utils.world.BlockUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.Vec3;
+import net.minecraft.entity.projectile.EntityEgg;
+import net.minecraft.util.*;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -157,19 +162,55 @@ public class RotationUtils {
         final float requiredPitch = (float)(-Math.toDegrees(Math.atan2(diffY, diffXZ)));
 
         //Smooth the rotations
-        return smoothRotations(new float[]{requiredYaw, requiredPitch}, lastRotations, speedFactor);
+        float[] smoothRotations = smoothRotations(new float[]{requiredYaw, requiredPitch}, lastRotations, speedFactor);
 
+        return getFixedRotation(smoothRotations, lastRotations);
+    }
+
+    public static float[] getScaffoldRotations(BlockPos blockPos, EnumFacing side, float[] lastRotations, double speedFactor) {
+        //Get rotations based on the side we are placing on
+        Vec3 point = new Vec3(blockPos).add(new Vec3(side.getDirectionVec()).scale(0.5));
+
+        double yTranslation = BlockUtils.getBlock(blockPos).getBlockBoundsMaxY() - BlockUtils.getBlock(blockPos).getBlockBoundsMinY() - 0.5;
+
+        double x = point.xCoord - mc.thePlayer.posX;
+        double y = point.yCoord - yTranslation - (mc.thePlayer.posY + mc.thePlayer.getEyeHeight()) - 7;
+        double z = point.zCoord - mc.thePlayer.posZ;
+        double dist = Math.sqrt(x * x + z * z);
+        float requiredYaw = (float) Math.toDegrees(Math.atan2(z, x)) - 90F;
+        float requiredPitch = (float) -Math.toDegrees(Math.atan2(y, dist));
+
+        //Smooth the rotations
+        float[] smoothRotations = smoothRotations(new float[]{requiredYaw, requiredPitch}, lastRotations, speedFactor);
+
+        return getFixedRotation(smoothRotations, lastRotations);
+    }
+
+    public static float getPitch(BlockPos pos, EnumFacing side) {
+        final EntityEgg egg = new EntityEgg(mc.theWorld);
+        egg.posX = pos.getX() + 0.5;
+        egg.posY = pos.getY() - 2.7035252353;
+        egg.posZ = pos.getZ() + 0.5;
+        egg.posX += side.getDirectionVec().getX() * 0.25;
+        egg.posY += side.getDirectionVec().getY() * 0.25;
+        egg.posZ += side.getDirectionVec().getZ() * 0.25;
+
+        double diffX = egg.posX - mc.thePlayer.posX;
+        double diffY = egg.posY - mc.thePlayer.posY;
+        double diffZ = egg.posZ - mc.thePlayer.posZ;
+        double dist = Math.sqrt(diffX * diffX + diffZ * diffZ);
+        float pitch = (float) -Math.toDegrees(Math.atan2(diffY, dist));
+
+        return pitch;
     }
 
     public static float[] smoothRotations(float[] rotations, float[] lastRotations, double speedFactor) {
         //Smooth the rotations
-        double[] interpolatedYaw = interpolateRotation(lastRotations[0], rotations[0], 20, speedFactor);
-        double[] interpolatedPitch = interpolateRotation(lastRotations[1], rotations[1], 20, speedFactor);
+        double[] interpolatedYaw = interpolateRotation(lastRotations[0], rotations[0], 30, speedFactor);
+        double[] interpolatedPitch = interpolateRotation(lastRotations[1], rotations[1], 30, speedFactor);
 
-        Model yawModel = DoubleExponentialSmoothingForLinearSeries.fit(interpolatedYaw, 0.8, 0.2);
-        Model pitchModel = DoubleExponentialSmoothingForLinearSeries.fit(interpolatedPitch, 0.8, 0.2);
-
-        //ChatUtils.message("SSE: " + yawModel.getSSE() + " | " + pitchModel.getSSE());
+        Model yawModel = DoubleExponentialSmoothingForLinearSeries.fit(interpolatedYaw, 0.1, 0.1);
+        Model pitchModel = DoubleExponentialSmoothingForLinearSeries.fit(interpolatedPitch, 0.1, 0.1);
 
         double[] yawData = yawModel.getSmoothedData();
         double[] pitchData = pitchModel.getSmoothedData();
@@ -177,6 +218,8 @@ public class RotationUtils {
         //Decide which  yaw and pitch are the best
         float bestYaw = (float) findBestRotation(yawData, speedFactor);
         float bestPitch = (float) findBestRotation(pitchData, speedFactor);
+        bestYaw = MathHelper.wrapAngleTo180_float(bestYaw);
+        bestPitch = MathHelper.wrapAngleTo180_float(bestPitch);
 
         return new float[]{bestYaw, bestPitch};
     }

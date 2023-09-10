@@ -1,33 +1,41 @@
 {
   "Backtrack": {
-    "Toggled": true,
+    "Toggled": false,
     "Settings": {
       "Mode": "Desync",
-      "Delay": 1500.0,
+      "Delay": 350.0,
+      "Visible": true
+    }
+  },
+  "Criticals": {
+    "Toggled": false,
+    "Settings": {
+      "Mode": "OldNCP",
       "Visible": true
     }
   },
   "Killaura": {
     "Toggled": false,
     "Settings": {
-      "Range": 3.3,
-      "APS": 10.0,
+      "Range": 3.6,
+      "APS": 15.0,
       "AttackMode": "Single",
       "SwitchDelay": 372.0,
       "SwitchTargets": 3.0,
       "Rotation": {
-        "RotationSpeed": 10.0,
+        "RotationSpeed": 15.0,
         "Jitter": false,
         "JitterStrength": 5.0
       },
+      "Autoblock": "None",
       "AttackPoint": "Cock",
       "Sort": "Distance",
       "FOV": 180.0,
       "TicksExisted": 0.0,
-      "KeepSprint": false,
+      "KeepSprint": true,
       "ThroughWalls": false,
       "Raycast": true,
-      "MovementFix": true,
+      "MovementFix": false,
       "Targets": {
         "Players": true,
         "Mobs": true,
@@ -38,7 +46,7 @@
     }
   },
   "Velocity": {
-    "Toggled": false,
+    "Toggled": true,
     "Settings": {
       "Mode": "Simple",
       "Explosions": true,
@@ -52,6 +60,80 @@
   "Sprint": {
     "Toggled": true,
     "Settings": {
+      "Visible": true
+    }
+  },
+  "Step": {
+    "Toggled": true,
+    "Settings": {
+      "Mode": "NCP",
+      "Height": 1.0,
+      "Timer": 0.3,
+      "Visible": true
+    }
+  },
+  "AntiVoid": {
+    "Toggled": false,
+    "Settings": {
+      "Mode": "Teleport",
+      "Visible": true
+    }
+  },
+  "Blink": {
+    "Toggled": false,
+    "Settings": {
+      "Direction": "Outgoing",
+      "Cancel Type": "Recommended",
+      "Pulse": false,
+      "Pulse Speed": 10.0,
+      "Fake Player": true,
+      "Visible": true
+    }
+  },
+  "InventoryManager": {
+    "Toggled": false,
+    "Settings": {
+      "Delay Min": 20.0,
+      "Delay Max": 30.0,
+      "In Inventory": true,
+      "CloseScreen": false,
+      "Randomize": true,
+      "Slots": {
+        "Sword Slot": 1.0,
+        "Pick Slot": 2.0,
+        "Axe Slot": 3.0,
+        "Shovel Slot": 4.0,
+        "Gap Slot": 5.0,
+        "Block Slot": 9.0
+      },
+      "Visible": true
+    }
+  },
+  "NoSlow": {
+    "Toggled": true,
+    "Settings": {
+      "Mode": "NCP",
+      "Visible": true
+    }
+  },
+  "SafeWalk": {
+    "Toggled": false,
+    "Settings": {
+      "InAir": false,
+      "Visible": true
+    }
+  },
+  "Scaffold": {
+    "Toggled": false,
+    "Settings": {
+      "Mode": "Normal",
+      "Tower": {
+        "Tower": true,
+        "Tower Mode": "NCP",
+        "Tower Move": false
+      },
+      "Sprint": true,
+      "Keep Y": false,
       "Visible": true
     }
   },
@@ -69,9 +151,37 @@
       "Visible": true
     }
   },
+  "Fullbright": {
+    "Toggled": false
+  },
   "HUDEditor": {
     "Toggled": false,
     "Settings": {
+      "Visible": true
+    }
+  },
+  "ItemPhysics": {
+    "Toggled": true,
+    "Settings": {
+      "Visible": false
+    }
+  },
+  "TimeChanger": {
+    "Toggled": false,
+    "Settings": {
+      "Time": 100.0,
+      "Visible": true
+    }
+  },
+  "ChestStealer": {
+    "Toggled": false,
+    "Settings": {
+      "Delay Min": 20.0,
+      "Delay Max": 30.0,
+      "CloseScreen": false,
+      "Randomize": true,
+      "OnlyChests": true,
+      "NoGui": true,
       "Visible": true
     }
   },
@@ -79,6 +189,32 @@
     "Toggled": false,
     "Settings": {
       "Visible": true
+    }
+  },
+  "AutoLogin": {
+    "Toggled": false,
+    "Settings": {
+      "Visible": true
+    }
+  },
+  "AutoPlay": {
+    "Toggled": false,
+    "Settings": {
+      "Delay": 500.0,
+      "Visible": true
+    }
+  },
+  "DevModule": {
+    "Toggled": false,
+    "Settings": {
+      "Visible": true
+    }
+  },
+  "Spoofer": {
+    "Toggled": true,
+    "Settings": {
+      "Mode": "Cancel",
+      "Visible": false
     }
   }
 }

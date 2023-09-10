@@ -37,8 +37,7 @@ public class RenderEntityItem extends Render<EntityItem> {
         float f6;
         float f4;
         float f5;
-        //TODO: Item Physics
-        if (/*Menace.instance.moduleManager.itemPhysicsModule.isToggled()*/ false) {
+        if (Menace.instance.moduleManager.itemPhysicsModule.isToggled()) {
             itemstack = itemIn.getEntityItem();
             item = itemstack.getItem();
             if (item == null) {

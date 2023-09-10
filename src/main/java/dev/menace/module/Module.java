@@ -16,7 +16,7 @@ import java.util.Collection;
 
 public class Module {
 
-    public static final Minecraft mc = Minecraft.getMinecraft();
+    public final Minecraft mc = Minecraft.getMinecraft();
     private final String name;
     private final String description;
     private final Category category;
@@ -71,12 +71,7 @@ public class Module {
     public void onGuiUpdate() { }
 
     public void toggle() {
-        this.toggled = !this.toggled;
-        if (this.toggled) {
-            onEnable();
-        } else {
-            onDisable();
-        }
+        this.setToggled(!this.toggled);
     }
 
     public void setToggled(boolean toggled) {

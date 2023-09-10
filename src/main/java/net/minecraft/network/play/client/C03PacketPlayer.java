@@ -45,9 +45,19 @@ public class C03PacketPlayer implements Packet<INetHandlerPlayServer>
         return this.x;
     }
 
+    public void setPositionX(double x)
+    {
+        this.x = x;
+    }
+
     public double getPositionY()
     {
         return this.y;
+    }
+
+    public void setPositionY(double y)
+    {
+        this.y = y;
     }
 
     public double getPositionZ()
@@ -55,9 +65,19 @@ public class C03PacketPlayer implements Packet<INetHandlerPlayServer>
         return this.z;
     }
 
+    public void setPositionZ(double z)
+    {
+        this.z = z;
+    }
+
     public float getYaw()
     {
         return this.yaw;
+    }
+
+    public void setYaw(float yaw)
+    {
+        this.yaw = yaw;
     }
 
     public float getPitch()
@@ -65,15 +85,26 @@ public class C03PacketPlayer implements Packet<INetHandlerPlayServer>
         return this.pitch;
     }
 
+    public void setPitch(float pitch)
+    {
+        this.pitch = pitch;
+    }
+
     public boolean isOnGround()
     {
         return this.onGround;
+    }
+
+    public void setOnGround(boolean onGround)
+    {
+        this.onGround = onGround;
     }
 
     public boolean isMoving()
     {
         return this.moving;
     }
+
 
     public boolean getRotating()
     {

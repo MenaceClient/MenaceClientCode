@@ -9,11 +9,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.security.NoSuchAlgorithmException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import dev.menace.utils.security.EncryptionUtils;
 
 public class FileManager {
 
@@ -23,8 +25,7 @@ public class FileManager {
     private static final File hudFolder = new File(menaceFolder, "hud");
     private static final File configFolder = new File(menaceFolder, "configs");
     private static final File scriptFolder = new File(menaceFolder, "scripts");
-
-    //private static File betaFolder = new File(menaceFolder, "beta");
+    private static File encryptionKeyFile;
 
     public static void init() {
 
@@ -32,7 +33,42 @@ public class FileManager {
         if (!hudFolder.exists()) {hudFolder.mkdirs();}
         if (!configFolder.exists()) {configFolder.mkdirs();}
         if (!scriptFolder.exists()) {scriptFolder.mkdirs();}
-        //if (!betaFolder.exists()) {betaFolder.mkdirs();}
+
+        String userHome = System.getProperty("user.home");
+        encryptionKeyFile = new File(userHome, ".menace/encryption/encryptionkey.txt");
+        if (!encryptionKeyFile.exists()) {
+            try {
+                encryptionKeyFile.getParentFile().mkdirs();
+                encryptionKeyFile.createNewFile();
+                FileOutputStream outputStream = new FileOutputStream(encryptionKeyFile);
+                outputStream.write(EncryptionUtils.generateKey());
+                outputStream.flush();
+                outputStream.close();
+
+                //Create a Readme file so the user knows what the encryption key is for
+                File important = new File(userHome, ".menace/encryption/IMPORTANT.txt");
+                important.createNewFile();
+                FileWriter fileWriter = new FileWriter(important);
+                String importantText = "This file is used to store the encryption key for Menace.\n" +
+                        "If you delete this file, you will lose all of your encrypted data.\n" +
+                        "DO NOT SHARE THIS FILE WITH ANYONE AS IT MAY GIVE THEM ACCESS TO YOUR ALTS.\n";
+                fileWriter.write(importantText);
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException | NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                FileInputStream inputStream = new FileInputStream(encryptionKeyFile);
+                byte[] key = new byte[inputStream.available()];
+                inputStream.read(key);
+                inputStream.close();
+                EncryptionUtils.setKey(key);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
@@ -50,6 +86,10 @@ public class FileManager {
 
     public static File getConfigFolder() {
         return configFolder;
+    }
+
+    public static File getEncryptionKeyFile() {
+        return encryptionKeyFile;
     }
 
     public static boolean writeObjectToFile(File file, Object o) {

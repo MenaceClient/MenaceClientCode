@@ -135,10 +135,10 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback
                 if (s4 != null)
                 {
                     this.deletingServer = true;
-                    String s = I18n.format("selectServer.deleteQuestion", new Object[0]);
-                    String s1 = "\'" + s4 + "\' " + I18n.format("selectServer.deleteWarning", new Object[0]);
-                    String s2 = I18n.format("selectServer.deleteButton", new Object[0]);
-                    String s3 = I18n.format("gui.cancel", new Object[0]);
+                    String s = I18n.format("selectServer.deleteQuestion");
+                    String s1 = "\'" + s4 + "\' " + I18n.format("selectServer.deleteWarning");
+                    String s2 = I18n.format("selectServer.deleteButton");
+                    String s3 = I18n.format("gui.cancel");
                     GuiYesNo guiyesno = new GuiYesNo(this, s, s1, s2, s3, this.serverListSelector.func_148193_k());
                     this.mc.displayGuiScreen(guiyesno);
                 }
@@ -348,7 +348,7 @@ public class GuiMultiplayer extends GuiScreen implements GuiYesNoCallback
         this.hoveringText = null;
         this.drawDefaultBackground();
         this.serverListSelector.drawScreen(mouseX, mouseY, partialTicks);
-        this.drawCenteredString(this.fontRendererObj, I18n.format("multiplayer.title", new Object[0]), this.width / 2, 20, 16777215);
+        this.drawCenteredString(this.fontRendererObj, I18n.format("multiplayer.title"), this.width / 2, 20, 16777215);
         super.drawScreen(mouseX, mouseY, partialTicks);
 
         if (this.hoveringText != null)

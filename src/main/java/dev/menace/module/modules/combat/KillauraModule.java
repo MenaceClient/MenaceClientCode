@@ -3,9 +3,12 @@ package dev.menace.module.modules.combat;
 import dev.menace.Menace;
 import dev.menace.event.Listener;
 import dev.menace.event.annotations.EventLink;
-import dev.menace.event.events.EventMove;
+import dev.menace.event.events.EventJump;
+import dev.menace.event.events.EventPostMotion;
 import dev.menace.event.events.EventPreMotion;
+import dev.menace.event.events.EventStrafe;
 import dev.menace.module.Category;
+import dev.menace.module.DontSaveState;
 import dev.menace.module.Module;
 import dev.menace.module.settings.BooleanSetting;
 import dev.menace.module.settings.DividerSetting;
@@ -14,8 +17,9 @@ import dev.menace.module.settings.NumberSetting;
 import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.misc.ChatUtils;
 import dev.menace.utils.player.EntityFakePlayer;
+import dev.menace.utils.player.MovementUtils;
+import dev.menace.utils.player.PacketUtils;
 import dev.menace.utils.player.RotationUtils;
-import dev.menace.utils.player.SprintHandler;
 import dev.menace.utils.raycast.RaycastUtils;
 import dev.menace.utils.timer.MSTimer;
 import net.minecraft.entity.EntityLivingBase;
@@ -23,15 +27,19 @@ import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemSword;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
+@DontSaveState
 public class KillauraModule extends Module {
 
-    ArrayList<EntityLivingBase> targets = new ArrayList<>();
+    public ArrayList<EntityLivingBase> targets = new ArrayList<>();
     MSTimer delayTimer = new MSTimer();
     long currentDelay;
     float[] lastRotations = new float[2];
@@ -39,6 +47,10 @@ public class KillauraModule extends Module {
     //Switch
     int switchIndex;
     MSTimer switchTimer = new MSTimer();
+
+    //AutoBlock
+    public boolean blocking;
+    boolean couldBlock;
 
     //Settings
     NumberSetting range = new NumberSetting("Range", true, 4, 3.3, 6, 0.1, false);
@@ -50,6 +62,7 @@ public class KillauraModule extends Module {
     BooleanSetting jitter = new BooleanSetting("Jitter", true, false);
     NumberSetting jitterStrength = new NumberSetting("JitterStrength", true, 1, 1, 5, true);
     DividerSetting rotationDivider = new DividerSetting("Rotation", true, rotationSpeed, jitter, jitterStrength);
+    ListSetting autoblock = new ListSetting("Autoblock", true, "None", "None", "Vanilla", "NCP", "Fake");
     ListSetting attackPoint = new ListSetting("AttackPoint", true, "Head", "Head", "Eyes", "Body", "Cock", "Feet", "Smart");
     ListSetting sortMode = new ListSetting("Sort", true, "Health", "Health", "Distance", "Angle", "TicksExisted");
     NumberSetting fov = new NumberSetting("FOV", true, 180, 10, 180, true);
@@ -67,7 +80,7 @@ public class KillauraModule extends Module {
 
     public KillauraModule() {
         super("Killaura", "Attacks targets for you.", Category.COMBAT);
-        addSettings(range, aps, attackMode, switchDelay, switchTargets, rotationDivider, attackPoint, sortMode, fov, ticksexisted, keepsprint, throughWalls, raycast, movementFix, targetdivider);
+        addSettings(range, aps, attackMode, switchDelay, switchTargets, rotationDivider, autoblock, attackPoint, sortMode, fov, ticksexisted, keepsprint, throughWalls, raycast, movementFix, targetdivider);
     }
 
     @Override
@@ -85,13 +98,17 @@ public class KillauraModule extends Module {
         switchIndex = 0;
         lastRotations = new float[]{mc.thePlayer.rotationYaw, mc.thePlayer.rotationPitch};
         currentDelay = MathUtils.calculateDelay(aps.getValueI());
+        blocking = false;
+        couldBlock = false;
         super.onEnable();
     }
 
     @Override
     public void onDisable() {
         targets.clear();
-        SprintHandler.resetPriority(100);
+        if (blocking) {
+            releaseBlocking();
+        }
         super.onDisable();
     }
 
@@ -110,8 +127,13 @@ public class KillauraModule extends Module {
                 return;
             }*/
 
-            SprintHandler.resetPriority(100);
+            couldBlock = false;
             lastRotations = new float[]{mc.thePlayer.rotationYaw, mc.thePlayer.rotationPitch};
+
+            if (blocking) {
+                releaseBlocking();
+            }
+
             return;
         }
 
@@ -155,9 +177,13 @@ public class KillauraModule extends Module {
                 break;
         }
 
+        if (!keepsprint.getValue() && movementFix.getValue()) {
+            mc.thePlayer.setSprinting(false);
+        }
+
         //Calculate the percentage speed we should use
         double speedFactor = (rotationSpeed.getValue() / 10);
-        float[] rotations = RotationUtils.getFixedRotation(RotationUtils.getAuraRotations(attackPos, lastRotations, speedFactor), lastRotations);
+        float[] rotations = RotationUtils.getAuraRotations(attackPos, lastRotations, speedFactor);
 
         //Handle Jitter
         if (jitter.getValue()) {
@@ -165,10 +191,17 @@ public class KillauraModule extends Module {
             rotations = RotationUtils.doJitter(rotations, target, jitter, range.getValue());
         }
 
-        //ChatUtils.message("Rotations: " + rotations[0] + " | " + rotations[1]);
         event.setYaw(rotations[0]);
         event.setPitch(rotations[1]);
         lastRotations = rotations;
+
+        //AutoBlock
+        couldBlock = canBlock();
+        if (canBlock()) {
+            beforeAttackAutoblock();
+        } else {
+            releaseBlocking();
+        }
 
         //Check if the player is actually looking at the entity
         if (raycast.getValue() && !RaycastUtils.isCrosshairOnEntity(rotations, target, range.getValue())) {
@@ -192,45 +225,46 @@ public class KillauraModule extends Module {
     };
 
     @EventLink
-    Listener<EventMove> onMove = event -> {
-        //Movement correction
-        //TODO: Improve this
+    Listener<EventPostMotion> onPostMotion = event -> {
+        if (couldBlock) {
+            postAutoblock();
+        }
+    };
+
+    @EventLink
+    Listener<EventStrafe> onMoveFix = event -> {
         if (movementFix.getValue() && !targets.isEmpty()) {
+            event.setYaw(lastRotations[0]);
 
-            if (!keepsprint.getValue()) {
-                SprintHandler.setSprinting(false, 100);
+            float diff = MathHelper.wrapAngleTo180_float(MathHelper.wrapAngleTo180_float(lastRotations[0]) - MathHelper.wrapAngleTo180_float(MovementUtils.getPlayerDirection())) + 22.5F;
+
+            if (diff < 0) {
+                diff = 360 + diff;
             }
 
-            double motionX = event.getX();
-            double motionZ = event.getZ();
+            int a = (int) (diff / 45.0);
 
-            double speed = Math.sqrt(motionX * motionX + motionZ * motionZ);
+            float value = event.getForward() != 0 ? Math.abs(event.getForward()) : Math.abs(event.getStrafe());
 
-            //Check if the player is moving
-            if (speed <= 0.22) {
-                return;
+            float forward = value;
+            float strafe = 0;
+
+            for (int i = 0; i < 8 - a; i++) {
+                float dirs[] = MovementUtils.incrementMoveDirection(forward, strafe);
+
+                forward = dirs[0];
+                strafe = dirs[1];
             }
 
-            float yaw = lastRotations[0];
+            event.setForward(forward);
+            event.setStrafe(strafe);
+        }
+    };
 
-            //calculate moving direction
-            double movingDirection = Math.atan2(motionZ, motionX) * 180 / Math.PI - 90;
-
-            //calculate the difference between the player yaw and the moving direction
-            double difference = Math.abs(MathUtils.getDistanceBetweenAngles(yaw, movingDirection));
-
-            //if we are moving forward we don't need to correct the player
-            if (difference < 45 || difference > 135) return;
-
-            //If we are not moving forward we need to slow down the player to the default speed (0.22)
-            //Exact Value: 0.21583238522039938
-            double defaultSpeed = 0.21583238522039938;
-            double newSpeed = defaultSpeed / speed;
-
-            //Calculate the new motionX and motionZ
-            event.setX(motionX * newSpeed);
-            event.setZ(motionZ * newSpeed);
-
+    @EventLink
+    Listener<EventJump> onJump = event -> {
+        if (movementFix.getValue() && !targets.isEmpty()) {
+            event.setYaw(lastRotations[0]);
         }
     };
 
@@ -267,6 +301,52 @@ public class KillauraModule extends Module {
                 .filter(e -> !(e instanceof EntityFakePlayer))
                 .sorted(comparator)
                 .forEach(targets::add);
+    }
+
+    private boolean canBlock() {
+        return mc.thePlayer != null && !targets.isEmpty() && mc.thePlayer.getHeldItem().getItem() instanceof ItemSword;
+    }
+
+    private void beforeAttackAutoblock() {
+        switch (autoblock.getValue()) {
+            case "Vanilla":
+                if (blocking) {
+                    PacketUtils.sendBlocking(false);
+                    blocking = true;
+                }
+                break;
+            case "NCP":
+                if (blocking) {
+                    PacketUtils.releaseUseItem();
+                    blocking = false;
+                }
+                break;
+        }
+    }
+
+    private void postAutoblock() {
+        switch (autoblock.getValue()) {
+            case "NCP":
+                if (!blocking) {
+                    PacketUtils.sendBlocking(true);
+                    blocking = true;
+                }
+                break;
+        }
+    }
+
+    private void releaseBlocking() {
+        if(blocking) {
+            switch (autoblock.getValue()) {
+                case "Vanilla":
+                case "NCP":
+                    if (mc.thePlayer.getHeldItem() != null && mc.thePlayer.getHeldItem().getItem() instanceof ItemSword) {
+                        PacketUtils.releaseUseItem();
+                        blocking = false;
+                    }
+                    break;
+            }
+        }
     }
 
 }

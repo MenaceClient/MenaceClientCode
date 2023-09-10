@@ -1,103 +1,689 @@
-[20:51:38] [Client thread/INFO]: Setting user: Player16
-[20:51:38] [Client thread/INFO]: (Session ID is token:0:Player16)
-[20:51:40] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
-[20:51:40] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
-[20:51:40] [Client thread/INFO]: LWJGL Version: 2.9.4
-[20:51:41] [Client thread/INFO]: [OptiFine] 
-[20:51:41] [Client thread/INFO]: [OptiFine] OptiFine_1.8.9_HD_U_M6_pre2
-[20:51:41] [Client thread/INFO]: [OptiFine] Build: null
-[20:51:41] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
-[20:51:41] [Client thread/INFO]: [OptiFine] Java: 1.8.0_382, BellSoft
-[20:51:41] [Client thread/INFO]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
-[20:51:41] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
-[20:51:41] [Client thread/INFO]: [OptiFine] OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2, version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
-[20:51:41] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.6.0
-[20:51:41] [Client thread/INFO]: [OptiFine] Maximum texture size: 32768x32768
-[20:51:41] [VersionCheck/INFO]: [OptiFine] Checking for new version
-[20:51:41] [Client thread/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 536.23
-[20:51:41] [Client thread/INFO]: [Shaders] Vendor:  NVIDIA Corporation
-[20:51:41] [Client thread/INFO]: [Shaders] Renderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
-[20:51:41] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
-[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
-[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
-[20:51:41] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
-[20:51:41] [Client thread/INFO]: [Shaders] Load shaders configuration.
-[20:51:41] [Client thread/INFO]: [Shaders] Save shaders configuration.
-[20:51:41] [Client thread/INFO]: [Shaders] No shaderpack loaded.
-[20:51:41] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
-[20:51:42] [VersionCheck/INFO]: [OptiFine] Version found: M5
-[20:51:42] [Client thread/INFO]: Reloading ResourceManager: Default, gamerswordpack.zip
-[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
-[20:51:42] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
-[20:51:42] [Client thread/INFO]: [OptiFine] Resource packs: gamerswordpack.zip
-[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
-[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
-[20:51:42] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
-[20:51:43] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:51:43] [Thread-6/INFO]: Initializing LWJGL OpenAL
-[20:51:43] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:51:43] [Thread-6/INFO]: OpenAL initialized.
-[20:51:43] [Sound Library Loader/INFO]: Sound engine started
-[20:51:46] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
-[20:51:46] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
-[20:51:46] [Client thread/INFO]: [OptiFine] Multitexture: false
-[20:51:46] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
-[20:51:46] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
-[20:51:46] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/diamond_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/emerald_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/gold_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/coal_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/lapis_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/iron_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/redstone_ore, 1 -> 16
-[20:51:47] [Client thread/INFO]: Created: 1024x1024 textures-atlas
-[20:51:47] [Client thread/INFO]: [OptiFine] Animated sprites: 11
-[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
-[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
-[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
-[20:51:47] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
-[20:51:54] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
-[20:51:54] [Client thread/INFO]: Loaded Platform ViaVersion
-[20:51:54] [Client thread/INFO]: Loading translations...
-[20:51:54] [Client thread/INFO]: Registering protocols...
-[20:51:55] [Client thread/INFO]: Loaded Platform ViaBackwards
-[20:51:55] [Client thread/INFO]: Loaded Platform ViaRewind
-[20:51:55] [Client thread/INFO]: ViaVersion detected lowest supported version by the proxy: 1.4.6/7 (51)
-[20:51:55] [Client thread/INFO]: Highest supported version by the proxy: 1.20.2 (764)
-[20:51:55] [Client thread/WARN]: You are running an outdated Java version, please consider updating it to at least Java 17 (your version is 1.8.0_382). At some point in the future, ViaVersion will no longer be compatible with this version of Java.
-[20:51:55] [Via Async Scheduler 0/INFO]: Finished mapping loading, shutting down loader executor!
-[20:51:55] [Client thread/INFO]: ViaLoadingBase has loaded 3/3 platforms
-[20:51:56] [Via Async Task 1/WARN]: You are running a newer version of the plugin than is released!
+[16:19:25] [Client thread/INFO]: Setting user: Player921
+[16:19:25] [Client thread/INFO]: (Session ID is token:0:Player921)
+[16:19:26] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
+[16:19:26] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[16:19:26] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:19:27] [Client thread/INFO]: [OptiFine] 
+[16:19:27] [Client thread/INFO]: [OptiFine] OptiFine_1.8.9_HD_U_M6_pre2
+[16:19:27] [Client thread/INFO]: [OptiFine] Build: null
+[16:19:27] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[16:19:27] [Client thread/INFO]: [OptiFine] Java: 1.8.0_382, BellSoft
+[16:19:27] [Client thread/INFO]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+[16:19:27] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
+[16:19:27] [Client thread/INFO]: [OptiFine] OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2, version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+[16:19:27] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.6.0
+[16:19:27] [Client thread/INFO]: [OptiFine] Maximum texture size: 32768x32768
+[16:19:27] [VersionCheck/INFO]: [OptiFine] Checking for new version
+[16:19:27] [Client thread/INFO]: [Shaders] OpenGL Version: 4.6.0 NVIDIA 536.23
+[16:19:27] [Client thread/INFO]: [Shaders] Vendor:  NVIDIA Corporation
+[16:19:27] [Client thread/INFO]: [Shaders] Renderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+[16:19:27] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[16:19:27] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[16:19:27] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[16:19:27] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[16:19:27] [Client thread/INFO]: [Shaders] Load shaders configuration.
+[16:19:27] [Client thread/INFO]: [Shaders] Save shaders configuration.
+[16:19:27] [Client thread/INFO]: [Shaders] No shaderpack loaded.
+[16:19:27] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
+[16:19:27] [Client thread/INFO]: Reloading ResourceManager: Default, gamerswordpack.zip
+[16:19:27] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
+[16:19:27] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
+[16:19:27] [Client thread/INFO]: [OptiFine] Resource packs: gamerswordpack.zip
+[16:19:27] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
+[16:19:27] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
+[16:19:27] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
+[16:19:27] [VersionCheck/INFO]: [OptiFine] Version found: M5
+[16:19:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:19:28] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[16:19:28] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:19:28] [Thread-6/INFO]: OpenAL initialized.
+[16:19:28] [Sound Library Loader/INFO]: Sound engine started
+[16:19:29] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
+[16:19:29] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
+[16:19:29] [Client thread/INFO]: [OptiFine] Multitexture: false
+[16:19:29] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[16:19:29] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[16:19:30] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/diamond_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/emerald_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/gold_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/coal_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/lapis_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/iron_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: [OptiFine] Scaled too small texture: minecraft:blocks/redstone_ore, 1 -> 16
+[16:19:30] [Client thread/INFO]: Created: 1024x1024 textures-atlas
+[16:19:30] [Client thread/INFO]: [OptiFine] Animated sprites: 11
+[16:19:30] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
+[16:19:30] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
+[16:19:31] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
+[16:19:31] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
+[16:19:32] [Via-Mappingloader-0/INFO]: Loading block connection mappings ...
+[16:19:32] [Client thread/INFO]: Loaded Platform ViaVersion
+[16:19:32] [Client thread/INFO]: Loading translations...
+[16:19:32] [Client thread/INFO]: Registering protocols...
+[16:19:32] [Client thread/INFO]: Loaded Platform ViaBackwards
+[16:19:32] [Client thread/INFO]: Loaded Platform ViaRewind
+[16:19:32] [Client thread/INFO]: ViaVersion detected lowest supported version by the proxy: 1.4.6/7 (51)
+[16:19:32] [Client thread/INFO]: Highest supported version by the proxy: 1.20.2 (764)
+[16:19:32] [Client thread/WARN]: You are running an outdated Java version, please consider updating it to at least Java 17 (your version is 1.8.0_382). At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[16:19:32] [Via Async Scheduler 0/INFO]: Finished mapping loading, shutting down loader executor!
+[16:19:32] [Client thread/INFO]: ViaLoadingBase has loaded 3/3 platforms
+[16:19:33] [Via Async Task 1/WARN]: You are running a newer version of the plugin than is released!
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.relauncher.CoreModManager
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.DimensionManager
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$FogColors
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.EventBus
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addDestroyEffects
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addHitEffects
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canCreatureSpawn
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canRenderInLayer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getBedDirection
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getExtendedState
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.hasTileEntity
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isAir
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBed
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.canRiderInteract
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRenderInPass
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRiderSit
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.ForgeEventFactory
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeHooks
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.item.Item.delegate
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getDurabilityForDisplay
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getModel
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.shouldCauseReequipAnimation
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.showDurabilityBar
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.canRenderBreaking
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.getRenderBoundingBox
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.hasFastRenderer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.shouldRenderInPass
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.countEntities
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getCloudRenderer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getSkyRenderer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getWeatherRenderer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IColoredBakedQuad
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.IExtendedBlockState
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IModel
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.IRenderHandler
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.pipeline.LightUtil
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.MinecraftForge
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.ModContainer
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader$VanillaLoader
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderBlockOverlayEvent$OverlayType
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderItemInFrameEvent
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Pre
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Post
+[16:19:36] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Pre
+[16:19:36] [Client thread/INFO]: [OptiFine] *** Reloading custom textures ***
+[16:19:36] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky1.properties
+[16:19:37] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky2.properties
+[16:19:37] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky3.properties
+[16:19:37] [Client thread/INFO]: [OptiFine] CustomSky properties: mcpatcher/sky/world0/sky4.properties
+[16:19:37] [Client thread/INFO]: [OptiFine] Enable face culling: acacia_leaves, birch_leaves, dark_oak_leaves, jungle_leaves, oak_leaves, spruce_leaves
+[16:19:52] [Client thread/INFO]: Connecting to eu.loyisa.cn, 25565
+[16:19:54] [Client thread/INFO]: [CHAT]        
+[16:19:54] [Client thread/INFO]: [CHAT] [+] ExterminateYT
+[16:19:54] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1834) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:19:54] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1710'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1710'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:20:05] [Client thread/INFO]: [CHAT] Diona >> You selected: Vanilla
+[16:20:11] [Client thread/INFO]: [CHAT] [+] YouLeftMe
+[16:20:11] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:326) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:20:18] [Client thread/INFO]: [CHAT] Diona >> You selected: OldNoCheatPlus
+[16:20:18] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1711'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1711'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:20:32] [Client thread/INFO]: [CHAT] Diona >> You selected: NoCheatPlus
+[16:20:37] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
+[16:21:02] [Client thread/INFO]: [CHAT] Diona >> You selected: OldNoCheatPlus
+[16:21:07] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed fight.critical vl=1(+1)
+[16:21:07] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed fight.critical vl=2(+1)
+[16:21:07] [Client thread/INFO]: [CHAT] [-] Table8AGF08151
+[16:21:07] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed fight.critical vl=3(+1)
+[16:21:08] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed fight.critical vl=4(+1)
+[16:21:22] [Client thread/INFO]: [CHAT] [-] FatMole_Panda
+[16:21:23] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=35.865(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:23] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=71.73(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:24] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=107.595(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:24] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=143.46(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:25] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=179.325(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:25] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=215.19(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:26] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=251.055(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:26] [Client thread/INFO]: [CHAT] [ONCP] ExterminateYT failed moving.survivalfly vl=286.92(+35.865) Details: distance=0.36 locationfrom=211.67, 62.06, 144.16 locationto=211.67, 62.42, 144.16 tags=vdistrel
+[16:21:37] [Client thread/INFO]: [CHAT] [+] FatMole_Panda
+[16:21:37] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:326) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:22:06] [Client thread/INFO]: [CHAT] Unknown command. Type "/help" for help.
+[16:22:07] [Client thread/INFO]: [CHAT] [-] FatMole_Panda
+[16:22:12] [Client thread/INFO]: [CHAT] [+] GDf279
+[16:22:13] [Client thread/INFO]: [CHAT] Diona >> You selected: Matrix
+[16:22:13] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:10): first move teleport component: move.first | MOVE: 10 vl(s)
+[16:22:13] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:35): teleport move: 240.394 component: move.tp | MOVE: 35 vl(s)
+[16:22:16] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.333/-0.078, hor: 0.0, buffer: 0.206/false, ground: +,+, setback: +, vel: none, from: 63.42, past: 0.42, p_tags: jump, tags: jump,ground_spoof) component: move.vert | MOVE: 5 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.135/false, ground: -,-, setback: +, vel: none, from: 62.0, past: -0.062, p_tags: fall_fix, tags: collision,air_mdf) component: move.vert | MOVE: 5 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.166/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 10 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.198/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 15 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.229/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 20 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.185/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: teleport,collision_fall, tags: collision,air_mdf) component: move.vert | MOVE: 25 vl(s)
+[16:22:20] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.066/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: collision, tags: collision,air_mdf) component: move.vert | MOVE: 30 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.031/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: teleport,collision_fall, tags: collision,air_mdf) component: move.vert | MOVE: 35 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.031/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: collision, tags: collision,air_mdf) component: move.vert | MOVE: 40 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.031/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: teleport,collision_fall, tags: collision,air_mdf) component: move.vert | MOVE: 45 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.031/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.0, p_tags: collision, tags: collision,air_mdf) component: move.vert | MOVE: 50 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.063/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 55 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.094/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 60 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.125/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 65 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.156/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 70 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.188/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 75 vl(s)
+[16:22:21] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.219/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 80 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.25/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 85 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.281/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 90 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.313/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 50 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.344/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 55 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.375/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 60 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.406/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 65 vl(s)
+[16:22:22] [Client thread/INFO]: [CHAT] [Matrix] ExterminateYT failed MOVE(vl:5): unexpected vertical movement (motion: 0.063/0.0, hor: 0.0, buffer: 0.438/true, ground: -,-, setback: +, vel: none, from: 62.0, past: 0.063, p_tags: collision,air_mdf,force_setback, tags: collision,air_mdf) component: move.vert | MOVE: 70 vl(s)
+[16:22:28] [Client thread/INFO]: [CHAT] Diona >> You selected: AAC
+[16:22:28] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1720'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1720'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:22:30] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:7): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:30] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:8): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:9): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:10): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:11): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:12): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:13): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:14): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:15): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:31] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER 
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,0.000,0.000
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,0.000,0.000
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,0.000,0.000
+[16:22:32] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:33] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:16): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:34] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:35] [Client thread/INFO]: [CHAT] [AAC] ExterminateYT failed move (vl:17): at: 173.268,62.000,161.858 move: 0.000,0.063,0.000 pred: 0.000,0.000,0.000 dist: 0.063 info: ++ PLAYER  vel: 0.000,-0.078,0.000
+[16:22:36] [Client thread/INFO]: [CHAT] [+] FatMole_Panda
+[16:22:36] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1722'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1722'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:22:38] [Client thread/INFO]: [CHAT] [+] LPKsin
+[16:22:38] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1723'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1723'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:22:43] [Client thread/INFO]: [CHAT] Diona >> You selected: GrimAC
+[16:22:45] [Client thread/INFO]: [CHAT] Diona >> Our Discord: https://discord.gg/fdmkfts
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:1.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:2.0): .062500 /gl 180
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:2.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:3.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:4.0): .062500 /gl 180
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:4.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:5.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:6.0): .062500 /gl 180
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:6.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:7.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:8.0): .062500 /gl 180
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:8.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:9.0): claimed false
+[16:22:47] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:10.0): .062500 /gl 180
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:10.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:11.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:12.0): .062500 /gl 180
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:12.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:13.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:14.0): .062500 /gl 180
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:14.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:15.0): claimed false
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed Simulation (vl:16.0): .062500 /gl 180
+[16:22:48] [Client thread/INFO]: [CHAT] [GrimAC] ExterminateYT failed GroundSpoof (vl:16.0): claimed false
+[16:22:59] [Client thread/INFO]: [CHAT] Diona >> You selected: Vulcan
+[16:22:59] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Speed (B) (vl:1/20): speed=59.62387696624617 max=0.4475 diff=59.176376966246174 ticks=18 deltaY=0.0 | Moving too quickly on the ground.
+[16:22:59] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Speed (D) (vl:1/20): speed=59.62387696624617 max=0.8368 diff=58.787076966246175 ticks=3 deltaY=0.0 tp=120 | Moving too quickly on the ground.
+[16:23:03] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:1/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:03] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:2/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:03] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:3/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:04] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:4/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:04] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:5/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:04] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:6/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:05] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:7/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:05] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:8/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:05] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:9/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:05] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:10/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:06] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:11/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:06] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:12/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:06] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:13/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:07] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:14/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:07] [Client thread/INFO]: [CHAT] [Vulcan] ExterminateYT failed Motion (B) (vl:15/15): deltaY=0.0625 | Repeated vertical motions.
+[16:23:18] [Client thread/INFO]: [CHAT] Diona >> You selected: TakaAntiCheat
+[16:23:18] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:23:22] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:22] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:23] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:23] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_STEP
+[16:23:24] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:24] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:25] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:26] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_STEP
+[16:23:26] [Client thread/INFO]: [CHAT] [TakaAC] ExterminateYT failed MOVING_LOW_JUMP
+[16:23:33] [Client thread/INFO]: [CHAT] Diona >> You selected: Reflex
+[16:23:33] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1727'.
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:20) [classes/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:890) [classes/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275) [classes/:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [classes/:?]
+	at Start.main(Start.java:9) [classes/:?]
+Caused by: java.lang.IllegalStateException: Player is either on another team or not on any team. Cannot remove from team 'TSAPR_Z1727'.
+	at net.minecraft.scoreboard.Scoreboard.removePlayerFromTeam(Scoreboard.java:321) ~[classes/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleTeams(NetHandlerPlayClient.java:1859) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:131) ~[classes/:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.processPacket(S3EPacketTeams.java:12) ~[classes/:?]
+	at net.minecraft.network.PacketThreadUtil.lambda$checkThreadAndEnqueue$0(PacketThreadUtil.java:19) ~[classes/:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) ~[?:1.8.0_382]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) ~[?:1.8.0_382]
+	at net.minecraft.util.Util.runTask(Util.java:19) ~[classes/:?]
+	... 4 more
+[16:23:47] [Client thread/INFO]: [CHAT] Diona >> You selected: NoCheatPlus
+[16:23:51] [Client thread/INFO]: Connecting to anticheat-test.com, 25565
+[16:23:53] [Client thread/INFO]: [CHAT]                                      
+[16:23:53] [Client thread/INFO]: [CHAT]  
+[16:23:53] [Client thread/INFO]: [CHAT] our Discord server got terminated, relink with /discord
+[16:23:53] [Client thread/INFO]: [CHAT]  
+[16:23:53] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=23.4(+23.4) health=20.0/20.0
+[16:23:53] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=69.8(+46.4) health=20.0/20.0
+[16:23:54] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=116.2(+46.4) health=20.0/20.0
+[16:23:54] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=131.2(+15) health=20.0/20.0
+[16:23:54] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=154.6(+23.4) health=20.0/20.0
+[16:23:54] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=201(+46.4) health=20.0/20.0
+[16:23:55] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=224.3(+23.4) health=20.0/20.0
+[16:23:55] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=270.8(+46.4) health=20.0/20.0
+[16:23:55] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=292(+21.2) health=20.0/20.0
+[16:23:55] [Client thread/INFO]: [CHAT] NCP > [MOVING_SURVIVALFLY] [ExterminateYT] VL=338.4(+46.4) health=20.0/20.0
+[16:23:56] [Client thread/INFO]: [CHAT] use /help for commands and stuff
+[16:24:20] [Client thread/INFO]: [CHAT] Connecting to verus
+[16:24:21] [Client thread/INFO]: [CHAT]  
+[16:24:21] [Client thread/INFO]: [CHAT] our Discord server got terminated, relink with /discord
+[16:24:21] [Client thread/INFO]: [CHAT]  
+[16:24:21] [Client thread/INFO]: [CHAT] This is Verus Premium with the "moreTransactions" mode enabled on the reach check, if you still don't think its real Verus go fuck your self :)
+[16:24:21] [Client thread/INFO]: [CHAT] Alerts are filtered by default to see everyone's alerts type /filter
+[16:24:21] [Client thread/INFO]: [CHAT] You are now viewing alerts
+[16:24:21] [Client thread/INFO]: [CHAT] Enabled alerts for you because some people are too incompetent to type /alerts
+[16:24:23] [Client thread/INFO]: [CHAT] use /help for commands and stuff
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[1]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[2]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[3]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[3]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[4]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[5]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[8]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[6]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[8]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[13]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[9]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[11]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[18]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[12]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[14]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[23]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[16]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[18]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[28]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[20]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[22]
+[16:24:25] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[33]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[25]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[27]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[38]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[30]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[32]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[43]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[35]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[38]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[48]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[41]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[44]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[53]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[47]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[50]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[58]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[53]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[57]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[63]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[60]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[64]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[68]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[67]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[71]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[73]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[75]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[79]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[78]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[83]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[87]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[83]
+[16:24:26] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[92]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[96]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[87]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[101]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[105]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[92]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[110]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[115]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[97]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[120]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[125]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[102]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[130]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[135]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[107]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[140]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[145]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[112]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[150]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[155]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[117]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[160]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[165]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[122]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[170]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[175]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[127]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[180]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[185]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[132]
+[16:24:27] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[190]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[195]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[137]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[200]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[205]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[142]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[210]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[215]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[147]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[220]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[225]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[152]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[230]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[235]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[157]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[240]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[245]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[162]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[250]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[255]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[167]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[260]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[265]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[172]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[270]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[275]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[177]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[280]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[285]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[182]
+[16:24:28] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[290]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[295]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[186]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[300]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[305]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[191]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[310]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[315]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[196]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[320]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[325]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[201]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[330]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[335]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[206]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[340]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[345]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[211]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[350]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[355]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[216]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[360]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4I VL[365]
+[16:24:29] [Client thread/INFO]: [CHAT] Verus > ExterminateYT failed Fly 4D VL[221]
+[16:24:42] [Client thread/INFO]: [CHAT] Please type /server anticheat-test to select other anticheats.
+[16:24:50] [Client thread/INFO]: [CHAT]                                      
+[16:24:50] [Client thread/INFO]: [CHAT]  
+[16:24:50] [Client thread/INFO]: [CHAT] our Discord server got terminated, relink with /discord
+[16:24:50] [Client thread/INFO]: [CHAT]  
+[16:24:52] [Client thread/INFO]: [CHAT] Unknown command. Type "/help" for help.
+[16:24:53] [Client thread/INFO]: [CHAT] use /help for commands and stuff
+[16:25:52] [Client thread/INFO]: Stopping!
+[16:25:52] [Client thread/INFO]: SoundSystem shutting down...
+[16:25:52] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

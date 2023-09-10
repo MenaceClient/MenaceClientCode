@@ -41,8 +41,15 @@ public class MathUtils {
         return mouseX >= x && mouseY >= y && mouseX < x1 && mouseY < y1;
     }
 
-    public static int randInt(int i, int length) {
-        return (random.nextInt() * (length - i)) + i;
+    public static int randInt(int start, int end) {
+        return end - start <= 0 ? start : start + random.nextInt(end - start);
+    }
+
+    public static long randLong(long startInclusive, long endInclusive) {
+        if(startInclusive == endInclusive || endInclusive - startInclusive <= 0F)
+            return startInclusive;
+
+        return (long) (startInclusive + ((endInclusive - startInclusive) * Math.random()));
     }
 
     public static double roundToPlace(double value, int places) {
@@ -78,5 +85,4 @@ public class MathUtils {
 
         return (int) Math.min(Math.max(delayWithVariation, MIN_DELAY_MS), MAX_DELAY_MS);
     }
-
 }

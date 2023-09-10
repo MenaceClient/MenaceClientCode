@@ -37,6 +37,7 @@ public class BlinkModule extends Module {
 
     @Override
     public void onGuiUpdate() {
+        cacelType.setVisible(!direction.getValue().equalsIgnoreCase("Incoming"));
         pulseSpeed.setVisible(pulse.getValue());
         super.onGuiUpdate();
     }

@@ -1,0 +1,106 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2/09/23 10:58 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at dev.menace.module.modules.player.InvManagerModule.lambda$new$0(InvManagerModule.java:121)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:127)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1976)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:900)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:275)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at dev.menace.module.modules.player.InvManagerModule.lambda$new$0(InvManagerModule.java:121)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:127)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1712)
+	at net.minecraft.world.World.updateEntity(World.java:1685)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 14888
+	Entity Name: ExterminateYT
+	Entity's Exact location: 238.26, 62.00, 174.66
+	Entity's Block location: 238.00,62.00,174.00 - World: (238,62,174), Chunk: (at 14,3,14 in 14,10; contains blocks 224,0,160 to 239,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.01, -0.08, 0.00
+	Entity's Rider: ~~ERROR~~ NullPointerException: null
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1540)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 3 total; [EntityPlayerSP['ExterminateYT'/14888, l='MpServer', x=238.26, y=62.00, z=174.66], EntityOtherPlayerMP['Loyisa'/9152, l='MpServer', x=235.47, y=62.00, z=175.47], EntityOtherPlayerMP['unlimitedcoder2'/6030, l='MpServer', x=202.91, y=62.00, z=166.13]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 211.00,60.00,162.00 - World: (211,60,162), Chunk: (at 3,3,2 in 13,10; contains blocks 208,0,160 to 223,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 112389 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 27 total; [EntityOtherPlayerMP['Loyisa'/9152, l='MpServer', x=235.47, y=62.00, z=175.47], EntityPlayerSP['ExterminateYT'/14888, l='MpServer', x=238.26, y=62.00, z=174.66], EntityOtherPlayerMP['Loyisa'/9152, l='MpServer', x=235.47, y=62.00, z=175.47], EntityArmorStand['§6KillauraAimTest 1'/66, l='MpServer', x=190.50, y=65.66, z=170.50], EntityArmorStand['§6KillauraSwitchTest'/68, l='MpServer', x=189.50, y=65.66, z=186.50], EntityArmorStand['§6ChestStealer'/78, l='MpServer', x=200.50, y=65.66, z=195.50], EntityOtherPlayerMP['unlimitedcoder2'/6030, l='MpServer', x=202.91, y=62.00, z=166.13], EntitySheep['Sheep'/14735, l='MpServer', x=189.06, y=62.00, z=185.91], EntityVillager['Aim5'/18, l='MpServer', x=191.50, y=65.00, z=134.50], EntityOtherPlayerMP['unlimitedcoder2'/6030, l='MpServer', x=202.91, y=62.00, z=166.13], EntityVillager['Aim10'/20, l='MpServer', x=189.50, y=75.00, z=134.50], EntitySheep['Sheep'/14677, l='MpServer', x=192.38, y=62.00, z=188.34], EntitySheep['Sheep'/14678, l='MpServer', x=190.91, y=62.00, z=186.94], EntitySheep['Sheep'/14766, l='MpServer', x=188.84, y=62.00, z=184.81], EntitySheep['Sheep'/14771, l='MpServer', x=190.16, y=62.00, z=189.41], EntityArmorStand['§6Nofall/Fly/Glide'/52, l='MpServer', x=214.50, y=65.66, z=140.50], EntityArmorStand['§6AntiCactus'/53, l='MpServer', x=215.50, y=65.66, z=156.50], EntityArmorStand['§6Scaffold'/54, l='MpServer', x=239.50, y=65.66, z=164.50], EntityArmorStand['§6Step'/55, l='MpServer', x=208.50, y=65.66, z=140.50], EntityArmorStand['§6Fastladder'/56, l='MpServer', x=208.50, y=65.66, z=180.50], EntityArmorStand['§6Jesus'/57, l='MpServer', x=214.50, y=65.66, z=188.50], EntityArmorStand['§6Esp'/58, l='MpServer', x=208.50, y=65.66, z=199.50], EntityArmorStand['§6AntiFire'/59, l='MpServer', x=215.50, y=65.66, z=168.50], EntityArmorStand['§6TerrainSpeed'/60, l='MpServer', x=250.50, y=65.66, z=160.50], EntityArmorStand['§6Snow'/61, l='MpServer', x=207.50, y=65.66, z=156.50], EntityArmorStand['§6Phase'/62, l='MpServer', x=235.50, y=65.66, z=211.50], EntityArmorStand['§6NoRotateSet'/63, l='MpServer', x=203.50, y=65.47, z=169.41]]
+	Retry entities: 0 total; []
+	Server brand: DionaSpigot (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:356)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2523)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:296)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_382, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 753066744 bytes (718 MB) / 987758592 bytes (942 MB) up to 987758592 bytes (942 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: gamerswordpack.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M6_pre2
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 536.23
+	OpenGlRenderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

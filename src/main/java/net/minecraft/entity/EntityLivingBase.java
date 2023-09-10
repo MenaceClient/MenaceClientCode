@@ -12,9 +12,11 @@ import java.util.UUID;
 
 import dev.menace.Menace;
 import dev.menace.event.events.EventJump;
+import dev.menace.event.events.EventStrafe;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.BaseAttributeMap;
@@ -1327,8 +1329,18 @@ public abstract class EntityLivingBase extends Entity
 
     protected void jump()
     {
-        EventJump event = new EventJump(this.getJumpUpwardsMotion());
-        Menace.instance.eventManager.post(event);
+        double jumpY = (double)this.getJumpUpwardsMotion();
+
+        if (this.isPotionActive(Potion.jump))
+        {
+            jumpY += (double)((float)(this.getActivePotionEffect(Potion.jump).getAmplifier() + 1) * 0.1F);
+        }
+
+        EventJump event = new EventJump(jumpY, this.rotationYaw, this.isSprinting());
+
+        if(this == Minecraft.getMinecraft().thePlayer) {
+            Menace.instance.eventManager.post(event);
+        }
 
         if (event.isCancelled()) {
             return;
@@ -1336,16 +1348,11 @@ public abstract class EntityLivingBase extends Entity
 
         this.motionY = event.getMotionFactor();
 
-        if (this.isPotionActive(Potion.jump))
+        if (event.isBoosting())
         {
-            this.motionY += (float)(this.getActivePotionEffect(Potion.jump).getAmplifier() + 1) * 0.1F;
-        }
-
-        if (this.isSprinting())
-        {
-            float f = this.rotationYaw * 0.017453292F;
-            this.motionX -= MathHelper.sin(f) * 0.2F;
-            this.motionZ += MathHelper.cos(f) * 0.2F;
+            float f = event.getYaw() * 0.017453292F;
+            this.motionX -= (double)(MathHelper.sin(f) * 0.2F);
+            this.motionZ += (double)(MathHelper.cos(f) * 0.2F);
         }
 
         this.isAirBorne = true;
@@ -1388,7 +1395,13 @@ public abstract class EntityLivingBase extends Entity
                         f5 = this.jumpMovementFactor;
                     }
 
-                    this.moveFlying(strafe, forward, f5);
+                    EventStrafe event = new EventStrafe(forward, strafe, f4, f5, this.rotationYaw);
+
+                    if (this == Minecraft.getMinecraft().thePlayer) {
+                        Menace.instance.eventManager.post(event);
+                    }
+
+                    this.moveFlying(event.getStrafe(), event.getForward(), event.getAttributeSpeed(), event.getYaw());
                     f4 = 0.91F;
 
                     if (this.onGround)
@@ -1440,13 +1453,13 @@ public abstract class EntityLivingBase extends Entity
                     }
 
                     this.motionY *= 0.9800000190734863D;
-                    this.motionX *= (double)f4;
-                    this.motionZ *= (double)f4;
+                    this.motionX *= event.getFriction();
+                    this.motionZ *= event.getFriction();
                 }
                 else
                 {
                     double d1 = this.posY;
-                    this.moveFlying(strafe, forward, 0.02F);
+                    this.moveFlying(strafe, forward, 0.02F, this.rotationYaw);
                     this.moveEntity(this.motionX, this.motionY, this.motionZ);
                     this.motionX *= 0.5D;
                     this.motionY *= 0.5D;
@@ -1482,7 +1495,7 @@ public abstract class EntityLivingBase extends Entity
                     f2 += (this.getAIMoveSpeed() * 1.0F - f2) * f3 / 3.0F;
                 }
 
-                this.moveFlying(strafe, forward, f2);
+                this.moveFlying(strafe, forward, f2, this.rotationYaw);
                 this.moveEntity(this.motionX, this.motionY, this.motionZ);
                 this.motionX *= (double)f1;
                 this.motionY *= 0.800000011920929D;

@@ -883,8 +883,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
             double d5 = z;
             boolean flag = this.onGround && this.isSneaking() && this instanceof EntityPlayer;
 
-            //TODO: SafeWalk
-            if (flag /*|| Menace.instance.moduleManager.safeWalkModule.isToggled() && (this.onGround || !this.onGround && Menace.instance.moduleManager.safeWalkModule.inair.isChecked())*/)
+            if (flag || Menace.instance.moduleManager.safeWalkModule.isToggled() && (this.onGround || !this.onGround && Menace.instance.moduleManager.safeWalkModule.inAir.getValue()))
             {
                 double d6;
 
@@ -987,7 +986,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
                 double d8 = z;
                 AxisAlignedBB axisalignedbb3 = this.getEntityBoundingBox();
                 this.setEntityBoundingBox(axisalignedbb);
-                y = (double)eventStep.getStepHeight();
+                y = eventStep.getStepHeight();
                 List<AxisAlignedBB> list = this.worldObj.getCollidingBoundingBoxes(this, this.getEntityBoundingBox().addCoord(d3, y, d5));
                 AxisAlignedBB axisalignedbb4 = this.getEntityBoundingBox();
                 AxisAlignedBB axisalignedbb5 = axisalignedbb4.addCoord(d3, 0.0D, d5);
@@ -1072,7 +1071,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
                     z = d8;
                     this.setEntityBoundingBox(axisalignedbb3);
                 } else {
-                    EventStep postStep = new EventStep(EventStep.StepState.POST, -1f);
+                    EventStep postStep = new EventStep(EventStep.StepState.POST, ((float) (eventStep.getStepHeight() + y)));
                     Menace.instance.eventManager.post(postStep);
                 }
             }

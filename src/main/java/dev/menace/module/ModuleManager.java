@@ -2,8 +2,9 @@ package dev.menace.module;
 
 import com.google.gson.JsonObject;
 import dev.menace.module.modules.combat.*;
+import dev.menace.module.modules.misc.*;
 import dev.menace.module.modules.movement.*;
-import dev.menace.module.modules.player.BlinkModule;
+import dev.menace.module.modules.player.*;
 import dev.menace.module.modules.render.*;
 import dev.menace.module.modules.world.*;
 import dev.menace.utils.file.FileManager;
@@ -18,24 +19,39 @@ public class ModuleManager {
 
     //COMBAT
     BacktrackModule backtrackModule = new BacktrackModule();
+    CriticalsModule criticalsModule = new CriticalsModule();
     public KillauraModule killauraModule = new KillauraModule();
     public VelocityModule velocityModule = new VelocityModule();
 
     //MOVEMENT
     public SprintModule sprintModule = new SprintModule();
+    StepModule stepModule = new StepModule();
 
     //PLAYER
+    AntiVoidModule antiVoidModule = new AntiVoidModule();
     BlinkModule blinkModule = new BlinkModule();
+    InvManagerModule invManagerModule = new InvManagerModule();
+    NoSlowModule noSlowModule = new NoSlowModule();
+    public SafeWalkModule safeWalkModule = new SafeWalkModule();
+    public ScaffoldModule scaffoldModule = new ScaffoldModule();
 
     //RENDER
     ClickGuiModule clickGuiModule = new ClickGuiModule();
     ESPModule espModule = new ESPModule();
+    FullbrightModule fullbrightModule = new FullbrightModule();
     HUDEditorModule hudEditorModule = new HUDEditorModule();
+    public ItemPhysicsModule itemPhysicsModule = new ItemPhysicsModule();
+    TimeChangerModule timeChangerModule = new TimeChangerModule();
 
     //WORLD
+    public ChestStealerModule chestStealerModule = new ChestStealerModule();
     FastPlaceModule fastPlaceModule = new FastPlaceModule();
 
     //MISC
+    AutoLoginModule autoLoginModule = new AutoLoginModule();
+    AutoPlayModule autoPlayModule = new AutoPlayModule();
+    DevModule devModule = new DevModule();
+    SpooferModule spooferModule = new SpooferModule();
 
 
     public ArrayList<Module> getModules() {

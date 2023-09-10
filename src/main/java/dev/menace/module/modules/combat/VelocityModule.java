@@ -11,6 +11,7 @@ import dev.menace.module.Module;
 import dev.menace.module.settings.BooleanSetting;
 import dev.menace.module.settings.ListSetting;
 import dev.menace.module.settings.NumberSetting;
+import dev.menace.utils.misc.ChatUtils;
 import net.minecraft.network.play.client.C0FPacketConfirmTransaction;
 import net.minecraft.network.play.server.S12PacketEntityVelocity;
 
@@ -24,7 +25,7 @@ public class VelocityModule extends Module {
     NumberSetting horizontal = new NumberSetting("Horizontal", true, 0, 0, 100, true);
     NumberSetting vertical = new NumberSetting("Vertical", true, 0, 0, 100, true);
     BooleanSetting smooth = new BooleanSetting("Smooth", true, true);
-    NumberSetting hurtTime = new NumberSetting("HurtTime", true, 0, 0, 20, true);
+    NumberSetting hurtTime = new NumberSetting("HurtTime", true, 0, 0, 10, true);
 
     //Reverse
     Queue<Double> motionX = new ConcurrentLinkedDeque<>();
@@ -63,7 +64,7 @@ public class VelocityModule extends Module {
                 mc.thePlayer.motionZ *= 0.6;
             }
         } else if (mode.getValue().equalsIgnoreCase("Clip")) {
-            if (mc.thePlayer.hurtTime > 0) {
+            if (mc.thePlayer.hurtTime == 10) {
                 mc.thePlayer.setPosition(mc.thePlayer.posX, mc.thePlayer.posY - 0.3, mc.thePlayer.posZ);
                 mc.thePlayer.motionX = 0;
                 mc.thePlayer.motionY = 0;

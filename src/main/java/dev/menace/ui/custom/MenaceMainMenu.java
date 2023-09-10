@@ -1,7 +1,7 @@
 package dev.menace.ui.custom;
 
 import dev.menace.Menace;
-import dev.menace.ui.altmanager.DirectLoginScreen;
+import dev.menace.ui.altmanager.GuiAltManager;
 import dev.menace.utils.math.MathUtils;
 import dev.menace.utils.render.GLSLShader;
 import dev.menace.utils.render.RenderUtils;
@@ -125,15 +125,15 @@ public class MenaceMainMenu extends GuiScreen implements GuiYesNoCallback {
         GL11.glEnd();
         GL20.glUseProgram(0);
 
-        this.largeText.drawCenteredString("Menace", (float)(width / 2), ((float) height / 4 - 24), (new Color(199, 7, 7, 255)).getRGB());
+        this.largeText.drawCenteredString("Menace", (float)(width / 2), ((float) height / 4 - 24), -1);
 
         this.drawExit(mouseX, mouseY);
         this.drawOptions(mouseX, mouseY);
         this.drawAltmanager(mouseX, mouseY);
         this.drawSinglePlayer(mouseX, mouseY);
         this.drawMultiPlayer(mouseX, mouseY);
-        //this.text.drawString("Welcome back, " + Menace.instance.user.getUsername() + " [" + Menace.instance.user.getUID() + "]", 5, 5, Color.white.getRGB());
-        //this.text.drawString("Discord: " + Menace.instance.user.getDiscord(), 5, 25, Color.white.getRGB());
+        this.text.drawString("Welcome back, " + Menace.instance.user.getUsername() + " [" + Menace.instance.user.getUID() + "]", 5, 5, Color.white.getRGB());
+        this.text.drawString("Discord: " + Menace.instance.user.getDiscord(), 5, 25, Color.white.getRGB());
         super.drawScreen(mouseX, mouseY, partialTicks);
     }
 
@@ -221,8 +221,7 @@ public class MenaceMainMenu extends GuiScreen implements GuiYesNoCallback {
 
         if (MathUtils.isMouseHovered(width / 2 - 100, l1 + 48, 200, 20, mouseX, mouseY) && mouseButton == 0) {
             this.mc.getSoundHandler().playSound(PositionedSoundRecord.create(new ResourceLocation("gui.button.press"), 1.0F));
-            this.mc.displayGuiScreen(new DirectLoginScreen(this));
-            //TODO: Add alt manager
+            this.mc.displayGuiScreen(new GuiAltManager(this));
         }
 
         if (MathUtils.isMouseHovered(width / 2 - 100, l1, 200, 20, mouseX, mouseY) && mouseButton == 0) {

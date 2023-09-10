@@ -1,10 +1,26 @@
 {
   "Backtrack": 0,
+  "Criticals": 0,
   "Killaura": 19,
   "Velocity": 0,
   "Sprint": 0,
+  "Step": 0,
+  "AntiVoid": 0,
+  "Blink": 0,
+  "InventoryManager": 44,
+  "NoSlow": 0,
+  "SafeWalk": 33,
+  "Scaffold": 33,
   "ClickGui": 54,
   "ESP": 0,
+  "Fullbright": 0,
   "HUDEditor": 52,
-  "FastPlace": 0
+  "ItemPhysics": 0,
+  "TimeChanger": 0,
+  "ChestStealer": 44,
+  "FastPlace": 0,
+  "AutoLogin": 0,
+  "AutoPlay": 0,
+  "DevModule": 0,
+  "Spoofer": 0
 }

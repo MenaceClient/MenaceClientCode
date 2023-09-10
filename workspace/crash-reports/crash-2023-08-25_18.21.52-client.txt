@@ -1,0 +1,94 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 25/08/23 6:21 PM
+Description: Unexpected error
+
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:911)
+	at java.util.ArrayList$Itr.next(ArrayList.java:861)
+	at dev.menace.module.modules.render.ESPModule.lambda$new$0(ESPModule.java:25)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1757)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1427)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1230)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:947)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:274)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:911)
+	at java.util.ArrayList$Itr.next(ArrayList.java:861)
+	at dev.menace.module.modules.render.ESPModule.lambda$new$0(ESPModule.java:25)
+	at dev.menace.event.bus.impl.EventBus.post(EventBus.java:94)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1757)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1427)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 11 total; [EntityPlayerSP['ExterminateYT'/429160, l='MpServer', x=275.65, y=62.00, z=164.64], EntityOtherPlayerMP['wqc17'/426262, l='MpServer', x=292.59, y=62.00, z=185.81], EntityOtherPlayerMP['Co4k'/432943, l='MpServer', x=292.72, y=62.00, z=196.66], EntityOtherPlayerMP['antikawaii'/432944, l='MpServer', x=276.08, y=62.25, z=176.05], EntityOtherPlayerMP['877383'/433025, l='MpServer', x=271.50, y=62.00, z=196.50], EntityOtherPlayerMP['wyktgaming'/433026, l='MpServer', x=282.69, y=62.80, z=175.56], EntityOtherPlayerMP['Elok1155'/432941, l='MpServer', x=244.27, y=71.01, z=179.47], EntityFakePlayer['antikawaii'/44507, l='MpServer', x=276.08, y=62.25, z=176.05], EntityFakePlayer['Elok1155'/44508, l='MpServer', x=244.27, y=71.01, z=179.47], EntityFakePlayer['wyktgaming'/44509, l='MpServer', x=282.69, y=62.80, z=175.56], EntityFakePlayer['877383'/44510, l='MpServer', x=271.50, y=62.00, z=196.50]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: 211.00,60.00,162.00 - World: (211,60,162), Chunk: (at 3,3,2 in 13,10; contains blocks 208,0,160 to 223,255,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 44297 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 52 total; [EntityOtherPlayerMP['EinfachKaputt'/429353, l='MpServer', x=209.03, y=81.16, z=198.33], EntityPlayerSP['ExterminateYT'/429160, l='MpServer', x=275.65, y=62.00, z=164.64], EntityOtherPlayerMP['877383'/429760, l='MpServer', x=213.29, y=63.05, z=192.08], EntityOtherPlayerMP['antikawaii'/432944, l='MpServer', x=276.08, y=62.25, z=176.05], EntityOtherPlayerMP['wyktgaming'/425535, l='MpServer', x=182.06, y=62.00, z=183.03], EntityOtherPlayerMP['877383'/431874, l='MpServer', x=249.50, y=62.00, z=182.50], EntityOtherPlayerMP['antikawaii'/432944, l='MpServer', x=213.94, y=62.66, z=171.92], EntityOtherPlayerMP['wqc17'/426262, l='MpServer', x=211.17, y=62.98, z=169.01], EntityOtherPlayerMP['RmmY'/426753, l='MpServer', x=210.00, y=63.05, z=167.58], EntityOtherPlayerMP['antikawaii'/429356, l='MpServer', x=195.03, y=63.29, z=123.67], EntityOtherPlayerMP['877383'/432940, l='MpServer', x=245.50, y=62.00, z=172.50], EntityOtherPlayerMP['LaoTongdad'/430114, l='MpServer', x=220.21, y=62.00, z=189.38], EntityOtherPlayerMP['EinfachKaputt'/429353, l='MpServer', x=209.95, y=64.44, z=152.48], EntityOtherPlayerMP['877383'/433025, l='MpServer', x=271.50, y=62.00, z=196.50], EntityOtherPlayerMP['RmmY'/426753, l='MpServer', x=224.63, y=63.00, z=166.41], EntityOtherPlayerMP['877383'/429760, l='MpServer', x=222.44, y=63.00, z=164.53], EntityOtherPlayerMP['Elok1155'/432941, l='MpServer', x=245.18, y=66.04, z=197.77], EntityOtherPlayerMP['antikawaii'/429356, l='MpServer', x=165.74, y=62.04, z=173.72], EntityOtherPlayerMP['RmmY'/426753, l='MpServer', x=186.18, y=62.66, z=125.44], EntityArmorStand['§6Phase'/169, l='MpServer', x=235.50, y=65.66, z=211.50], EntityArmorStand['§6Scaffold'/174, l='MpServer', x=239.50, y=65.66, z=164.50], EntityArmorStand['§6TerrainSpeed'/175, l='MpServer', x=250.50, y=65.66, z=160.50], EntityOtherPlayerMP['antikawaii'/432944, l='MpServer', x=284.84, y=62.84, z=181.50], EntityOtherPlayerMP['877383'/430602, l='MpServer', x=240.50, y=62.00, z=170.50], EntityOtherPlayerMP['877383'/430602, l='MpServer', x=240.50, y=62.00, z=170.50], EntityOtherPlayerMP['Ad3rianFL'/430166, l='MpServer', x=194.60, y=66.49, z=200.56], EntityOtherPlayerMP['877383'/431874, l='MpServer', x=244.50, y=62.41, z=174.50], EntityOtherPlayerMP['EinfachKaputt'/429353, l='MpServer', x=209.52, y=74.79, z=157.47], EntityOtherPlayerMP['EinfachKaputt'/429353, l='MpServer', x=207.45, y=72.69, z=126.19], EntityOtherPlayerMP['Ad3rianFL'/430166, l='MpServer', x=223.85, y=62.66, z=189.65], EntityOtherPlayerMP['Co4k'/432943, l='MpServer', x=278.63, y=62.84, z=180.72], EntityOtherPlayerMP['wqc17'/426262, l='MpServer', x=292.59, y=62.00, z=185.81], EntityOtherPlayerMP['Co4k'/432943, l='MpServer', x=292.72, y=62.00, z=196.66], EntityOtherPlayerMP['Co4k'/432943, l='MpServer', x=292.72, y=62.00, z=196.66], EntityOtherPlayerMP['Elok1155'/432941, l='MpServer', x=244.27, y=71.01, z=179.47], EntityOtherPlayerMP['antikawaii'/432944, l='MpServer', x=276.08, y=62.25, z=176.05], EntityOtherPlayerMP['wqc17'/426262, l='MpServer', x=239.04, y=62.00, z=169.96], EntityOtherPlayerMP['wyktgaming'/433026, l='MpServer', x=282.69, y=62.80, z=175.56], EntityOtherPlayerMP['wyktgaming'/433026, l='MpServer', x=282.69, y=62.80, z=175.56], EntityItem['item.item.swordDiamond'/433027, l='MpServer', x=254.38, y=62.00, z=191.06], EntityOtherPlayerMP['877383'/433025, l='MpServer', x=271.50, y=62.00, z=196.50], EntityOtherPlayerMP['RmmY'/426753, l='MpServer', x=157.75, y=61.00, z=153.16], EntityOtherPlayerMP['Elok1155'/432941, l='MpServer', x=244.27, y=71.01, z=179.47], EntityOtherPlayerMP['wyktgaming'/430075, l='MpServer', x=182.06, y=62.00, z=183.03], EntityOtherPlayerMP['wqc17'/426262, l='MpServer', x=292.59, y=62.00, z=185.81], EntityOtherPlayerMP['wyktgaming'/430077, l='MpServer', x=254.44, y=62.00, z=188.16], EntityOtherPlayerMP['LaoTongdad'/430114, l='MpServer', x=203.18, y=62.41, z=207.66], EntityFakePlayer['antikawaii'/44507, l='MpServer', x=276.08, y=62.25, z=176.05], EntityFakePlayer['Elok1155'/44508, l='MpServer', x=244.27, y=71.01, z=179.47], EntityFakePlayer['wyktgaming'/44509, l='MpServer', x=282.69, y=62.80, z=175.56], EntityFakePlayer['877383'/44510, l='MpServer', x=271.50, y=62.00, z=196.50], EntityOtherPlayerMP['Ad3rianFL'/430166, l='MpServer', x=194.25, y=66.82, z=202.42]]
+	Retry entities: 0 total; []
+	Server brand: DionaSpigot (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:355)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2544)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:303)
+	at net.minecraft.client.main.Main.main(Main.java:122)
+	at Start.main(Start.java:9)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_382, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), BellSoft
+	Memory: 397293008 bytes (378 MB) / 1060634624 bytes (1011 MB) up to 1060634624 bytes (1011 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 536.23, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: gamerswordpack.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz
+	OptiFine Version: OptiFine_1.8.9_HD_U_M6_pre2
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 536.23
+	OpenGlRenderer: NVIDIA GeForce GTX 1650/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8

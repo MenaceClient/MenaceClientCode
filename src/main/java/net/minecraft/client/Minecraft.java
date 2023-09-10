@@ -18,6 +18,7 @@ import dev.menace.event.events.EventKey;
 import dev.menace.event.events.EventMouse;
 import dev.menace.event.events.EventWorldChange;
 import dev.menace.ui.custom.MenaceMainMenu;
+import dev.menace.utils.render.IconUtils;
 import dev.menace.utils.security.MenaceAuthScreen;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -502,33 +503,11 @@ public class Minecraft implements IThreadListener, IPlayerUsage
 
     private void setWindowIcon()
     {
-        //TODO: Menace Window Icon
         Util.EnumOS util$enumos = Util.getOSType();
 
         if (util$enumos != Util.EnumOS.OSX)
         {
-            InputStream inputstream = null;
-            InputStream inputstream1 = null;
-
-            try
-            {
-                inputstream = this.mcDefaultResourcePack.getInputStreamAssets(new ResourceLocation("icons/icon_16x16.png"));
-                inputstream1 = this.mcDefaultResourcePack.getInputStreamAssets(new ResourceLocation("icons/icon_32x32.png"));
-
-                if (inputstream != null && inputstream1 != null)
-                {
-                    Display.setIcon(new ByteBuffer[] {this.readImageToBuffer(inputstream), this.readImageToBuffer(inputstream1)});
-                }
-            }
-            catch (IOException ioexception)
-            {
-                logger.error((String)"Couldn\'t set icon", (Throwable)ioexception);
-            }
-            finally
-            {
-                IOUtils.closeQuietly(inputstream);
-                IOUtils.closeQuietly(inputstream1);
-            }
+            Display.setIcon(IconUtils.getFavicon());
         }
     }
 

@@ -23,6 +23,7 @@ public class ESPModule extends Module {
     @EventLink
     Listener<EventRender3D> onRender3D = event -> {
         for (EntityPlayer entity : mc.theWorld.playerEntities) {
+            int i = 0;
             if (entity != mc.thePlayer && entity.isEntityAlive() && !(entity instanceof EntityFakePlayer)) {
                 ESPUtils.draw2DESP(entity);
 

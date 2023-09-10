@@ -242,7 +242,8 @@ public class WorldClient extends World
 
         if (entity != null)
         {
-            this.entityList.remove(entity);
+            //this.entityList.remove(entity);
+            this.entityList.removeIf(entity1 -> entity1.getEntityId() == entityID);
             this.removeEntity(entity);
         }
 

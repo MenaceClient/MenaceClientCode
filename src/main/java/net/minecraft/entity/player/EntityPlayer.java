@@ -141,10 +141,10 @@ public abstract class EntityPlayer extends EntityLivingBase
     protected void entityInit()
     {
         super.entityInit();
-        this.dataWatcher.addObject(16, Byte.valueOf((byte)0));
-        this.dataWatcher.addObject(17, Float.valueOf(0.0F));
-        this.dataWatcher.addObject(18, Integer.valueOf(0));
-        this.dataWatcher.addObject(10, Byte.valueOf((byte)0));
+        this.dataWatcher.addObject(16, (byte) 0);
+        this.dataWatcher.addObject(17, 0.0F);
+        this.dataWatcher.addObject(18, 0);
+        this.dataWatcher.addObject(10, (byte) 0);
     }
 
     public ItemStack getItemInUse()
@@ -2194,7 +2194,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         }
     }
 
-    public static enum EnumStatus
+    public enum EnumStatus
     {
         OK,
         NOT_POSSIBLE_HERE,
